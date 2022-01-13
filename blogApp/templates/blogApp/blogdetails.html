@@ -1,0 +1,236 @@
+{% extends 'blogApp/base.html' %}
+{% load static %}
+{% block main_content %}
+
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Main Wrapper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="main-wrapper pd-b-80">
+    <div class="container">
+        <div class="row justify-content-between gutters-40">
+            <div class="col-lg-9 main-wrapper-content">
+                <!--~~~~~ Start Site Main ~~~~~-->
+                <main class="site-main">
+                    <div class="row">
+                        <!--~~~~~ Start Post ~~~~~-->
+                        
+                        <!--~./ end post ~-->
+    
+                        <!--~~~~~ Start Post ~~~~~-->
+                        <div class="col-lg-11 col-md-11">
+                            <article class="post hentry post-grid style-three">
+                                <div class="entry-thumb">
+                                    <figure class="thumb-wrap">
+                                        <a href="single-post.html">
+                                            {% if post_detail.featured_image %}
+
+                                            <img src="/media/{{ post_detail.featured_image}}">
+                                            {% else %}
+                                                <img src="{% static 'blogApp/assets/images/download.jpg' %}" alt="post" />
+                                            {% endif %}
+                                        </a>
+                                    </figure>
+                                    <!--./ thumb-wrap -->
+                                </div>
+                                <!--./ entry-thumb -->
+                                <div class="content-entry-wrap">
+                                    <div class="entry-category">
+                                        {{post_detail.category}}<span>&nbsp;&nbsp;By:&nbsp;&nbsp;</span>{{post_detail.author}},&nbsp;
+                                         {{post_detail.published_date}}
+                                    </div>
+
+                                    
+                                    <!--./ entry-category -->
+                                    <h3 class="entry-title">
+                                        {{post_detail.title}}
+                                    </h3>
+                                    <!--./ entry-title -->
+                                   
+                                    
+                            
+                                    <!--./ entry-meta-content -->
+                                    <div class="entry-summary">
+
+                                        {{post_detail.text | safe}}
+                                      
+                                    </div>
+                                
+                                    <!--./ entry-content -->
+                                </div>
+                                <!--./ content-entry-wrap -->
+                            </article>
+                        </div>
+
+
+                    </div>
+                </main>
+                <!--~./ end site main ~-->
+
+           
+
+
+                {% if user.is_authenticated %}
+                {% if post_detail.author.id == user.id %}
+               
+                <a href="{% url 'update' pk=post_detail.pk %}"><input  class="btn btn-primary" value="Edit"></a>
+                
+                <div class="float-right">
+                    <a href="{% url 'delete' pk=post_detail.pk %}"><input  class="btn btn-primary"  value="Delete"></a>
+                
+                </div>
+                {% endif %}
+                {% endif %}
+
+                <br><br>
+
+                <div class="rn-section rn-section-light-gray rn-post-comments">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="rn-post-comments-inner">
+                               
+                              
+                                <form action="{% url 'like_post' post_detail.pk %}" method="POST">
+                                    {% csrf_token %}
+                
+                                    {% if user.is_authenticated %}
+                                        {% if liked %}
+                                            <button type="submit", name="post_id", value="{{ post_detail.id }}", class="btn btn-danger btn-sm">unlike</button>
+                                        {% else %}
+                                            <button type="submit", name="post_id", value="{{ post_detail.id }}", class="btn btn-primary btn-sm">Like</button>
+                                        {% endif %}
+                                    {% else %}
+                                       <a href="{% url 'login' %}"> <small>Login to like...</small></a>
+                
+                                    {% endif %}
+                
+                                    &nbsp;&nbsp;  
+                                    <span>{{ total_likes}} likes</span>
+                                </form>
+                                
+                                <br><br>
+                                {% if not post_detail.comments.all %}
+                                    No Comments ...
+                                {% else %}
+                                
+                                    <div class="rn-comment-list">
+                                        <h2 class="rn-simple-title"> Comments...</h2>
+                                        <br>
+                                        {% for comment in post_detail.comments.all %}
+                                        <hr>
+                                        <strong>
+                                            {{ comment.created_date}} -
+                                            {{ comment.name}}
+                
+                                        </strong>
+                                        <br>
+                                        
+                                        {{ comment.body}}
+
+                                        <a href="{% url 'reply' comment.id %}" ><input type="button" class="btn btn-primary" value="Reply"></a>
+                                       
+                
+                                        {% endfor %}
+                                        <hr>
+                                    </div>
+                       
+                                {% endif %}
+                                <!-- End Comments-->
+                    
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                   <a href="{% url 'comment' post_detail.id %}"><input type="button" class="btn btn-primary" value="Add Comment"></a>     
+            </div>
+            
+            <!--~~~~~ Start sidebar ~~~~~-->
+            <div class="col-lg-3">
+                <!-- Sidebar Items -->
+                <div class="sidebar-items style-three">
+                    <!--~~~~~ Start About Me Widget ~~~~~-->
+
+
+
+                    <aside class="widget widget_advertisement">
+                        <div class="widget-content">
+                            <a href="#"><img src="{% static 'blogApp/assets/images/widget/ads.jpg' %}" alt="Advertisement" /></a>
+                        </div>
+                        <!-- /.widget-content -->
+                    </aside>
+
+
+                
+
+                    <!--~./ end about me widget ~-->
+
+                    <!--~~~~~ Start Categories Widget ~~~~~-->
+                    <aside class="widget widget_categories">
+                        <h4 class="widget-title">
+                            Categories
+                        </h4>
+                        <!-- /.widget-title -->
+                        <div class="widget-content">
+                            <ul>
+                                {% for cat in categories %}
+                               
+                                <li><span>{{ cat.category }}</span></a><span class="float-right">( {{cat.posts_count}} )</span></li>
+                               
+                                {% endfor %}
+                               
+                            </ul>
+                        </div>
+                        <!-- /.widget-content -->
+                    </aside>
+                    <!--~./ end categories widget ~-->
+
+                    <!--~~~~~ Start Signup Widget ~~~~~-->
+                    <aside class="widget tb-signup-widget">
+                        <div class="widget-content">
+                            <div class="signup-box">
+                                <h2>Subscribe to Our Newsletter</h2>
+                                <div class="signup-form-area">
+                                    <form class="signup-form">
+                                        <div class="form-group">
+                                            <input name="EMAIL" placeholder="Your Email Address" type="email">
+                                            <button class="btn btn-default" type="submit">Subscribe</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!--~./ End Signup Widget ~-->
+
+
+                    <!--~~~~~ Start Advertisement Widget ~~~~~-->
+                    
+                    <!--~./ end Advertisement widget ~-->
+                </div>
+                <!--  /.sidebar-items -->
+            </div>
+            <!--~./ end sidebar ~-->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

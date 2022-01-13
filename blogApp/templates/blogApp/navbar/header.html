@@ -1,0 +1,384 @@
+{% load static %}
+{% load active_link_tags %}
+
+<!-- <header class="main-header header-style-two"> -->
+    
+        
+    <!-- header-top-style-two -->
+    <!-- <div class="header-top-five">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <ul class="social-style-four in-block">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="logo-box centred">
+                        <a href="index-2.html"><figure><img src="{% static 'blogApp/' %}images/logo/logo1.png' %}" alt=""></figure></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="search-box">
+                        <form action="http://azim.commonsupport.com/Belfast/index.html" method="post">
+                            <div class="form-group">
+                                <input type="search" name="search" placeholder="Search" required="">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>header-top-style-two -->
+
+
+
+    <!-- main-menu -->
+    <!-- <div class="theme_menu menu-area stricky centred">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-7 col-xs-7 menu-column">
+                    <div class="menu-area">
+                        <nav class="main-menu">
+                            <div class="navbar-header">     
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="{% url 'blog' %}">Home</a>
+                                       
+                                    </li>
+                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li class="dropdown"><a href="#">Features</a>
+                                        <ul class="submenu">
+                                            <li><a href="post1.html">Standard Post</a></li>
+                                            {% if user.is_authenticated == user.is_superuser %}
+                                            <li><a href="{% url 'draft'%}">Draft</a></li>
+                                            {% endif %}
+                                           
+                                            
+                                    
+                                            <li><a href="video-post.html">Video Post</a></li>
+                                            <li><a href="audio-post.html">Audio Post</a></li>
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="shop-single.html">Single Shop</a></li>
+                                            <li><a href="cart.html">Cart Page</a></li>
+                                            <li><a href="checkout.html">Checkout Page</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                    
+                                    <li><a href="{% url 'contact' %}">contact</a></li>
+                                    <li><a href="{% url 'draft' %}">Draft</a></li>
+                                   
+                                  
+                                </ul> -->
+                                
+                                
+                                   
+                                
+
+                                <!-- mobile menu -->
+                                <!-- <ul class="mobile-menu clearfix">
+                                    <li ><a href="{% url 'blog' %}">Home</a>
+                                        
+                                    </li>
+                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li class="dropdown"><a href="#">Features</a>
+                                        <ul>
+                                            <li><a href="post1.html">Standard Post</a></li>
+                                            <li><a href="post2.html">Slider Post</a></li>
+                                            <li><a href="post3.html">Gallery Post</a></li>
+                                            
+                                            <li><a href="audio-post.html">Audio Post</a></li>
+                                            
+                                            <li><a href="shop-single.html">Single Shop</a></li>
+                                            
+                                            <li><a href="checkout.html">Checkout Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="travel.html">Travel</a></li>
+                                    <li><a href="lifestyle.html">Lifestyle</a></li>
+                                    <li><a href="music.html">Music</a></li>
+                                    <li><a href="contact.html">contact</a></li>
+                                    <li class="fa fa-login"><a href="">login</a></li>
+                                    <li class="fa fa-log-out"><a href="">Log-out</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div> -->
+                <!-- <div class="col-md-1 col-sm-1 col-xs-1 menu-column">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div> -->
+                <!-- <div class="col-md-5 col-sm-5 col-xs-3 menu-column" >
+                    <div class="navbar-collapse collapse clearfix">
+                        <ul class="navigation clearfix">
+                            {% if user.is_authenticated %}
+                            <span style="color: whitesmoke;">Welcome - {{ user.username | default:"Guest" | upper}}</span>
+                             <span style="min-width: 10;"><img src=""></span>
+                            
+                            <li class="dropdown">
+                                <a href="#">Profile</li>
+                                <ul class="submenu">
+                                    <li><a href="{% url 'profile' user.id %}">Profile</a></li>
+                                   <li><a href="{% url 'create'%}">Add Post</a></li>
+                                   <li><i class="fa fa-sign-out" style="position: absolute;"></i><a href="{% url 'logout' %}">Log-out</a></li>
+                                   
+                                    {% else %}
+                                    <li><i class="fa fa-user" style="position: absolute;"></i><a href="{% url 'register' %}">Register</a></li>  
+                                    <li> <i  class="fa fa-sign-in" style="position: absolute;"></i><a href="{% url 'login' %}">login</a></li>
+                                    {% endif %}
+                                </ul> 
+                             </li>   
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+       </div> -->
+    <!-- </div>end main-menu
+</header> -->
+
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			    Start Preloader
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+	<div class="preloader">
+		<div class="preloader-inner">
+			<div class="preloader-icon">
+				<span></span>
+				<span></span>
+			</div><!-- /preloader-icon -->
+		</div><!-- /preloader-inner -->
+	</div><!-- /preloader -->
+
+	
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+				Start Site Header
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+
+        <header class="site-header header-style-one intro-element">
+			<div class="navigation-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="site-navigation">
+								<div class="site-branding text-center">
+									<a href="{% url 'blog' %}">
+										<img src="{% static 'blogApp/assets/images/logo/logo6.png' %}" alt="Site Logo" />
+									</a>
+								</div><!-- /.site-branding -->
+								<nav class="navigation">
+									<div class="menu-wrapper">
+										<div class="menu-content">
+											<ul class="mainmenu">
+                                                <li class="megamenu">
+                                                    {% with url_name=request.resolver_match.url_name %}
+                                                    <li >
+                                                        <a class="{% if url_name == 'blog' %}active{% endif %}" href="{% url 'blog' %}">Home</a>	
+                                                    </li>
+                                                    {% endwith %}
+
+                                                    {% for item in display_menu %}
+                                                    {% with url_name=request.resolver_match.url_name %}
+                                                    <li >
+                                                        <a class="{% if url_name == 'category' %}active{% endif %}" href="{% url 'category' item|slugify %}">{{ item }}</a>
+                                                    </li> 
+                                                    {% endwith %}
+                                                    {% endfor %}
+                                               </li>
+												<!-- <li>
+                                                    <a href="#">Features</a>
+                                                </li>
+												{% if user.is_authenticated == user.is_superuser %}
+                                                   <li>
+                                                       <a href="{% url 'draft'%}">Draft</a>
+                                                    </li>
+                                                {% endif %}
+												<li>
+                                                    <a href="{% url 'about' %}">About</a>
+                                                </li>
+												<li>
+                                                    <a href="{% url 'contact' %}">contact</a>
+                                                </li> -->
+											</ul> <!-- /.menu-list -->
+                                
+                                                
+                                            
+										</div> <!-- /.hours-content-->
+									</div><!-- /.menu-wrapper -->
+                                   
+								</nav>
+
+                                <ul class="header-top-right-area mainmenu menu-content navigation">
+
+                                        <span style="color: whitesmoke;">Welcome - {{ user.username | default:"Guest" | upper}}</span>
+                                    {% if user.profile.pic %}
+                                        <span class="profile-image img"><img src="/media/{{ user.profile.pic }}" alt="pix"></span>
+                                    {% else %}
+                                    {% if not user.profile.pic %}
+                                        <span class="profile-image img"><img src="{% static 'blogApp/assets/images/profile.jpg' %}" alt="post" /></span>
+                                    {% endif %}
+                                    {% endif %}
+                                    
+                                    <li class="megamenu">
+                                        <span class="text-light"> Profile</span>
+                                            
+                                        <ul class="sub-menu megamenu-main">
+                                            <li>
+                                                <div class="megamenu-wrapper"> 
+                                                    <div class="row">
+                                                        <div class="col-md-3 megamenu-column">
+                                                            <div class="megamenu-column-inner">
+                                                                
+                                                                    <ul class="custom-megamenu ml-5">
+                                                                        {% if user.is_authenticated %}
+                                                                            <li ><a href="{% url 'profile' user.id %}">Profile</a></li>
+                                                                            <li><a href="{% url 'create'%}">Create POst</a></li>
+                                                                            <li><a href="{% url 'logout' %}">Logout</a> </li>
+                                                                            {% if user.is_authenticated == user.is_superuser %}
+                                                                                <li><a href="{% url 'draft'%}">Draft</a></li>
+                                                                            {% endif %}
+                                                                        {% else %}
+                                                                            <li><a href="{% url 'register' %}">Register</a></li>
+                                                                            <li><a href="{% url 'login' %}">Login</a> </li>
+                                                                        {% endif %}
+                                                                    </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                            <!-- <li class="megamenu">
+                                {% with url_name=request.resolver_match.url_name %}
+                                <li >
+                                    <a class="{% if url_name == 'blog' %}active{% endif %}" href="{% url 'blog' %}">Home</a>	
+                                </li>
+                                {% endwith %}
+
+                                {% for item in display_menu %}
+                                {% with url_name=request.resolver_match.url_name %}
+                                <li >
+                                    <a class="{% if url_name == 'category' %}active{% endif %}" href="{% url 'category' item|slugify %}">{{ item }}</a>
+                                </li> 
+                                {% endwith %}
+                                {% endfor %}
+                            </li> -->
+
+                                       
+                                        
+                                    </li>
+
+
+                                    
+                                </ul>
+								<!-- <div class="header-right-area">
+
+
+									<div class="search-wrap">
+										<div class="search-btn">
+											<i class="fas fa-search"></i>
+										</div>
+										<div class="search-form">
+											<form action="#">
+												<input type="search" placeholder="Search">
+												<button type="submit"><i class="fas fa-search"></i></button>
+											</form>
+										</div>
+									</div> -->
+									<!--~./ search-wrap ~-->
+									<!-- <div class="header-card-area">
+										<a href="#">
+											<span class="fas fa-shopping-cart"></span>
+											<sup>2</sup>
+										</a>
+									</div> -->
+									<!--~./ header card area ~-->
+
+									<div class="hamburger-menus">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div><!-- /.header-top-right-area -->
+							</div><!-- /.site-navigation -->
+						</div><!-- /.col-12 -->
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div><!-- /.navigation-area -->
+
+			<div class="mobile-sidebar-menu sidebar-menu">
+				<div class="overlaybg">
+
+
+
+
+                    <ul class="header-top-right-area mainmenu menu-content navigation">
+
+                        <span style="color: whitesmoke;">Welcome - {{ user.username | default:"Guest" | upper}}</span>
+                    {% if user.profile.pic %}
+                        <span class="profile-image img"><img src="/media/{{ user.profile.pic }}" alt="pix"></span>
+                    {% else %}
+                    {% if not user.profile.pic %}
+                        <span class="profile-image img"><img src="{% static 'blogApp/assets/images/profile.jpg' %}" alt="post" /></span>
+                    {% endif %}
+                    {% endif %}
+                    
+                    <li class="megamenu">
+                        <span class="text-light"> Profile</span>
+                            
+                        <ul class="sub-menu megamenu-main">
+                            <li>
+                                <div class="megamenu-wrapper"> 
+                                    <div class="row">
+                                        <div class="col-md-3 megamenu-column">
+                                            <div class="megamenu-column-inner">
+                                                
+                                                    <ul class="custom-megamenu ml-5">
+                                                        {% if user.is_authenticated %}
+                                                            <li ><a href="{% url 'profile' user.id %}">Profile</a></li>
+                                                            <li><a href="{% url 'create'%}">Create POst</a></li>
+                                                            <li><a href="{% url 'logout' %}">Logout</a> </li>
+                                                            {% if user.is_authenticated == user.is_superuser %}
+                                                                <li><a href="{% url 'draft'%}">Draft</a></li>
+                                                            {% endif %}
+                                                        {% else %}
+                                                            <li><a href="{% url 'register' %}">Register</a></li>
+                                                            <li><a href="{% url 'login' %}">Login</a> </li>
+                                                        {% endif %}
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        
+                    </li>
+                </ul>
+                    
+
+                </div>
+			</div>
+		</header>
+		<!--~~./ end site header ~~-->
+		<!--~~~ Sticky Header ~~~-->
+		<div id="sticky-header" class="active"></div>

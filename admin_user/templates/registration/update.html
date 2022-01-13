@@ -1,0 +1,376 @@
+{% extends 'blogApp/base.html' %}
+{% load static %}
+{% block main_content %}
+{% load crispy_forms_tags %}
+
+<!-- Mirrored from azim.commonsupport.com/Belfast/travel.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jan 2021 14:33:14 GMT -->
+
+
+<title>Update Page</title>
+
+<!-- page wrapper -->
+
+
+
+    <!-- .preloader -->
+    <div class="preloader"></div>
+    <!-- /.preloader -->
+
+
+    <!-- menu-area -->
+    
+    <!-- end menu-area -->
+
+
+    <!-- Hidden Bar -->
+    <section class="hidden-bar right-align">
+        
+        <div class="hidden-bar-closer">
+            <button class="btn"><i class="fa fa-close"></i></button>
+        </div>
+        <div class="hidden-bar-wrapper">
+        
+            <!-- .logo -->
+            <div class="logo-box centerd">
+                <a href="index-2.html"></a>
+            </div>
+            <div class="about-hidden-box">
+                <div class="title"><h4>About Us</h4></div>
+                <div class="text">We must explain to you how all seds this mistakens idea off denouncing pleasures and praising pain was born and I will give you a completed accounts off the system and expound the actually teaching of the great explorer ut of the truth, the master builder of human happiness.</div>
+                <a href="#" class="btn-one btn-bg">More About</a>
+            </div>
+            <div class="contact-hidden-box">
+                <div class="title"><h4>Contact Info</h4></div>
+                <div class="single-item">
+                    <div class="icon-box"><i class="fa fa-map-marker"></i></div>
+                    <div class="text">68 Smithfield Avenue,<br /> Broadwalk</div>
+                </div>
+                <div class="single-item">
+                    <div class="icon-box"><i class="fa fa-phone"></i></div>
+                    <div class="text">+ (01) 735 264 9870</div>
+                </div>
+                <div class="single-item">
+                    <div class="icon-box"><i class="fa fa-envelope"></i></div>
+                    <div class="text">belfast@gmail.com</div>
+                </div>
+            </div>
+            
+        </div>
+    </section><!-- / Hidden Bar end -->
+
+
+    <!--Page Title-->
+    <section class="page-title centred">
+        <div class="container">
+            <h3 class="text">Posts for Travel Category</h3>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+
+    <!-- blog-side -->
+    <!-- <section class="blog-side blog-style-one travel-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-12 col-xs-12 content-side">
+                    <div class="blog-details-content">
+                        <div class="content-box overlay-item">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img src="images/travel/1.jpg" alt=""></figure>
+                                    <div class="overlay-box">
+                                        <div class="overlay-inner">
+                                            <div class="content">
+                                                <a href="post1.html"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="contact-form-action">
+                                        <div class="form-heading text-center">
+                                            <h3 class="form-title">Update Blog!</h3>
+                                            <p class="form-desc">Edit your content and post</p>
+                                            
+                                            
+                                        </div>
+                                        <form method="POST" enctype="multipart/form-data">
+                                            {% csrf_token %}
+            
+                                            {{ form | crispy }}
+                                            <center><input type="submit" class="btn btn-success" value="Post"></center>
+                                        </form>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="content-box overlay-item">
+                                    <div class="inner-box">
+                                        <div class="image-box">
+                                            <figure class="image"><img src="images/travel/2.jpg" alt=""></figure>
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="content">
+                                                        <a href="post1.html"><i class="fa fa-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content-one blog-content-two sp-three">
+                                        <div class="top-content centred">
+                                            <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                            <div class="title"><h4><a href="post1.html">Never heard the word</a></h4></div>
+                                            <div class="date"><span>On</span> JANUARY 29, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> PAUL JOHN HEYMAN</div>
+                                        </div>
+                                        <div class="text">
+                                            <p>The need no welfare states starship enterprise theatre Brady Bunch that's the way we all be came the Braden Bunch these days are all Happy and Free these days a fish do not fry in the kitchen and beans...</p>
+                                        </div>
+                                        <ul class="meta-list centred">
+                                            <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp; 19</a> &nbsp; <i class="flaticon-circle"></i> &nbsp; <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp; 13</a></li>
+                                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> &nbsp;Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="content-box overlay-item">
+                                    <div class="inner-box">
+                                        <div class="image-box">
+                                            <figure class="image"><img src="images/travel/3.jpg" alt=""></figure>
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="content">
+                                                        <a href="post1.html"><i class="fa fa-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content-one blog-content-two sp-three">
+                                        <div class="top-content centred">
+                                            <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                            <div class="title"><h4><a href="post1.html">Know flipper lives in a world</a></h4></div>
+                                            <div class="date"><span>On</span> February 19, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> PAUL JOHN HEYMAN</div>
+                                        </div>
+                                        <div class="text">
+                                            <p>The need no welfare states starship enterprise theatre Brady Bunch that's the way we all be came the Braden Bunch these days are all Happy and Free these days a fish do not fry in the kitchen and beans...</p>
+                                        </div>
+                                        <ul class="meta-list centred">
+                                            <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp; 19</a> &nbsp; <i class="flaticon-circle"></i> &nbsp; <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp; 13</a></li>
+                                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> &nbsp;Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="content-box overlay-item">
+                                    <div class="inner-box">
+                                        <div class="image-box">
+                                            <figure class="image"><img src="images/travel/4.jpg" alt=""></figure>
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="content">
+                                                        <a href="post1.html"><i class="fa fa-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content-one blog-content-two sp-three">
+                                        <div class="top-content centred">
+                                            <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                            <div class="title"><h4><a href="post1.html">Four men living all together</a></h4></div>
+                                            <div class="date"><span>On</span> March 15, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> PAUL JOHN HEYMAN</div>
+                                        </div>
+                                        <div class="text">
+                                            <p>The need no welfare states starship enterprise theatre Brady Bunch that's the way we all be came the Braden Bunch these days are all Happy and Free these days a fish do not fry in the kitchen and beans...</p>
+                                        </div>
+                                        <ul class="meta-list centred">
+                                            <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp; 19</a> &nbsp; <i class="flaticon-circle"></i> &nbsp; <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp; 13</a></li>
+                                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> &nbsp;Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="content-box overlay-item">
+                                    <div class="inner-box">
+                                        <div class="image-box">
+                                            <figure class="image"><img src="images/travel/5.jpg" alt=""></figure>
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="content">
+                                                        <a href="post1.html"><i class="fa fa-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content-one blog-content-two sp-three">
+                                        <div class="top-content centred">
+                                            <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                            <div class="title"><h4><a href="post1.html">Everybody pulled his weight</a></h4></div>
+                                            <div class="date"><span>On</span> April 10, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> PAUL JOHN HEYMAN</div>
+                                        </div>
+                                        <div class="text">
+                                            <p>The need no welfare states starship enterprise theatre Brady Bunch that's the way we all be came the Braden Bunch these days are all Happy and Free these days a fish do not fry in the kitchen and beans...</p>
+                                        </div>
+                                        <ul class="meta-list centred">
+                                            <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp; 19</a> &nbsp; <i class="flaticon-circle"></i> &nbsp; <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp; 13</a></li>
+                                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> &nbsp;Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 sidebar-side">
+                    <div class="sidebar-content">
+                        <div class="sidebar-about centred">
+                            <div class="sidebar-title">ABOUT ME</div>
+                            <figure class="img-box"><img src="images/home/1.png" alt=""></figure>
+                            <h5 class="name">Jassy Beula</h5>
+                            <div class="text"><p>These days are all share them with me oh baby just sit right back and you will hear a tale a tale of a fateful trip that started.</p></div>
+                            <ul class="social-link">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-post">
+                            <div class="sidebar-title">RECENT POST</div>
+                            <div class="single-post">
+                                <div class="img-box"><a href="post1.html"><figure><img src="images/home/p1.jpg" alt=""></figure></a></div>
+                                <h6><a href="post1.html">Fleeing from the Cylon tyre</a></h6>
+                                <div class="text">JULY 09, 2018</div>
+                            </div>
+                            <div class="single-post">
+                                <div class="img-box"><a href="post1.html"><figure><img src="images/home/p2.jpg" alt=""></figure></a></div>
+                                <h6><a href="post1.html">Life support systems return</a></h6>
+                                <div class="text">MAY 19, 2018</div>
+                            </div>
+                            <div class="single-post">
+                                <div class="img-box"><a href="post1.html"><figure><img src="images/home/p3.jpg" alt=""></figure></a></div>
+                                <h6><a href="post1.html">Eoner on a crusade</a></h6>
+                                <div class="text">AUGUST 09, 2018</div>
+                            </div>
+                            <div class="single-post">
+                                <div class="img-box"><a href="post1.html"><figure><img src="images/home/p4.jpg" alt=""></figure></a></div>
+                                <h6><a href="post1.html">Aboard were expecting you</a></h6>
+                                <div class="text">SEPTEMBER 10, 2018</div>
+                            </div>
+                            <div class="single-post">
+                                <div class="img-box"><a href="post1.html"><figure><img src="images/home/p5.jpg" alt=""></figure></a></div>
+                                <h6><a href="post1.html">Our dreams come true</a></h6>
+                                <div class="text">OCTOBER 09, 2018</div>
+                            </div>
+                        </div>
+                        <div class="sidebar-newsletter centred">
+                            <div class="title"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;NEWSLETTER</div>
+                            <div class="text">These days are all share them wit me</div>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Your Email Address" required="">
+                                    <button type="submit" class="btn-one">SUBSCRIBE</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sidebar-instagram">
+                            <div class="sidebar-title">INSTAGRAM</div>
+                            <ul class="img-list clearfix"> 
+                                <li><figure class="img-box"><a href="#"><img src="images/home/i1.jpg" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="images/home/i2.jpg" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="images/home/i3.jpg" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="images/home/i4.jpg" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="images/home/i5.jpg" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="images/home/i6.jpg" alt=""></a></figure></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-categories">
+                            <div class="sidebar-title">CATEGORIES</div>
+                            <ul class="categories-list"> 
+                                <li><a href="#">Beauty<span>(3)</span></a></li>
+                                <li><a href="#">Dressing<span>(8)</span></a></li>
+                                <li><a href="#">Fitness <span>(7)</span></a></li>
+                                <li><a href="#">Lifestyle<span>(6)</span></a></li>
+                                <li><a href="#">Travel<span>(9)</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-img-content">
+                            <div class="single-item">
+                                <figure class="img-box"><img src="images/home/12.jpg" alt=""></figure>
+                                 <div class="inner-box">
+                                    <div class="content">
+                                        <div class="meta-text"><a href="#">Travel</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-item">
+                                <figure class="img-box"><img src="images/home/13.jpg" alt=""></figure>
+                                 <div class="inner-box">
+                                    <div class="content">
+                                        <div class="meta-text"><a href="#">MUSIC</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- single shop end -->
+
+
+    <!-- instagram-section -->
+    <!-- <section class="instagram-section centred">
+        <div class="container">
+            <div class="instagram-title">FOLLOW @ INSTAGRAM</div>
+            <ul class="instagram-img-list clearfix">
+                <li><a href="#"><figure><img src="images/home/f1.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f2.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f3.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f4.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f5.jpg" alt=""></figure></a></li>
+            </ul>
+        </div>
+    </section> -->
+    <!-- instagram-section -->
+
+    
+    <!-- main footer -->
+
+   
+    <!-- main footer end -->
+
+
+    <!-- footer bottom -->
+    <section class="footer-bottom footer-bottom-one centred">
+        <div class="container">
+            <div class="copyright">CopyrightS © 2020 <a href="#">soalinks</a>. All rights reserved</div>
+        </div>
+    </section>
+    <!-- footer bottom -->
+
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-angle-up"></span></div>
+{% endblock %}
+
+
+<!--jquery js -->
+
+
+<!-- End of .page_wrapper -->
+
+<!-- Mirrored from azim.commonsupport.com/Belfast/travel.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jan 2021 14:33:20 GMT -->

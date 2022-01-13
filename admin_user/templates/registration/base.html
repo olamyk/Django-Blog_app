@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Belfast | Responsive HTML 5 Template</title>
+    
+    <!-- Stylesheets -->
+    <link href="{% static 'blogApp/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'blogApp/css/responsive.css' %}" rel="stylesheet">
+    <link rel="icon" href="{% static 'blogApp/images/favicon.ico' %}" type="image/x-icon">
+    
+</head>
+
+<body class="boxed_wrapper">
+
+    {% include 'blogApp/navbar/header.html' %}
+
+    {% block main_content %}
+
+    {% endblock %}
+
+
+
+    {% include 'blogApp/navbar/footer.html' %}
+
+</body>
+
+
+<script type="text/javascript" src="{% static 'blogApp/js/jquery-2.1.4.js' %}"></script>
+<script src="{% static 'blogApp/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'blogApp/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'blogApp/js/wow.js' %}"></script>
+<script src="{% static 'blogApp/js/validation.js' %}"></script>
+<script src="{% static 'blogApp/js/jquery.fancybox.pack.js' %}"></script>
+<script type="text/javascript" src="{% static 'blogApp/js/SmoothScroll.js' %}"></script>
+<script src="{% static 'blogApp/js/html5lightbox/html5lightbox.js' %}"></script> 
+<script src="{% static 'blogApp/js/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'blogApp/js/nouislider.js' %}"></script>
+<script src="{% static 'blogApp/js/imagezoom.js' %}"></script>
+<script src="{% static 'blogApp/js/jquery.bxslider.min.js' %}"></script>
+<script src="{% static 'blogApp/js/jquery.bootstrap-touchspin.js' %}"></script>
+<script src="{% static 'blogApp/js/script.js' %}"></script>

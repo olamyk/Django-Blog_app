@@ -1,0 +1,188 @@
+{% extends 'blogApp/base.html' %}
+{% load static %}
+{% block main_content %}
+
+<title>Belfast | Responsive HTML 5 Template</title>
+
+
+<!-- page wrapper -->
+
+
+
+    <!-- .preloader -->
+    <div class="preloader"></div>
+    <!-- /.preloader -->
+
+
+    <!-- menu-area -->
+   
+          
+    <!-- end menu-area -->
+
+
+    <!-- Hidden Bar -->
+    <section class="hidden-bar right-align">
+        
+        <div class="hidden-bar-closer">
+            <button class="btn"><i class="fa fa-close"></i></button>
+        </div>
+        <div class="hidden-bar-wrapper">
+        
+            <!-- .logo -->
+            <div class="logo-box centerd">
+                <a href="index-2.html"></a>
+            </div>
+            <div class="about-hidden-box">
+                <div class="title"><h4>About Us</h4></div>
+                <div class="text">We must explain to you how all seds this mistakens idea off denouncing pleasures and praising pain was born and I will give you a completed accounts off the system and expound the actually teaching of the great explorer ut of the truth, the master builder of human happiness.</div>
+                <a href="#" class="btn-one btn-bg">More About</a>
+            </div>
+            <div class="contact-hidden-box">
+                <div class="title"><h4>Contact Info</h4></div>
+                <div class="single-item">
+                    <div class="icon-box"><i class="fa fa-map-marker"></i></div>
+                    <div class="text">68 Smithfield Avenue,<br /> Broadwalk</div>
+                </div>
+                <div class="single-item">
+                    <div class="icon-box"><i class="fa fa-phone"></i></div>
+                    <div class="text">+ (01) 735 264 9870</div>
+                </div>
+                <div class="single-item">
+                    <div class="icon-box"><i class="fa fa-envelope"></i></div>
+                    <div class="text">belfast@gmail.com</div>
+                </div>
+            </div>
+            
+        </div>
+    </section><!-- / Hidden Bar end -->
+
+
+    <!--Page Title-->
+    <section class="page-title centred">
+        <div class="container">
+            <h3 class="text">Checkout</h3>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+
+    <!-- single shop -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="top-content">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="text">Returning Customer?&nbsp;<a href="#">Click here to login</a></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="text">Have a Coupon?&nbsp;<a href="#">Click here to enter your code</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 checkout-column">
+                    <div class="billing-info">
+                        <h3 class="title-text">Delete Post Parmanently</h3>
+                        <div class="col-12">
+                            <div class="contact-form-action">
+                                <div class="form-heading text-center">
+                                    <h3 class="form-title">Delete Post!</h3>
+                                    <p class="form-desc" style="color: red;">Are you sure you want to delete this post?</p>
+                                   
+                                </div>
+    
+                                <form method="POST">
+                                    {% csrf_token %}
+    
+                                    <center><input type="submit" class="btn btn-danger" value="Yes Delete">
+                                    <a href="{% url 'draft'  %}" class="btn btn-primary">No Cancel</a></center>
+                                </form>
+                                
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="shipping-address">
+                        <h3 class="title-text">Shipping to different address?</h3>
+                        <textarea placeholder="Order Notes"></textarea>
+                    </div> 
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 checkout-column">
+                    <div class="your-order">
+                        <h3 class="title-text">Your Order</h3>
+                        <div class="prod-total"><h6>Product<span>Total</span></h6></div>
+                        <div class="single-item">
+                            <div class="text">Women’s winter coat × 1<span>$45</span></div>
+                            <div class="text">Casual Top Wear  × 1<span>$50</span></div>
+                        </div>
+                        <div class="single-item">Sub-Total<span>$95</span></div>
+                        <div class="single-item">Total<span>$95</span></div>
+                    </div>
+                    <div class="payment-system">
+                        <div class="checkbox">
+                            <label>
+                                <input type="radio" name="ship-same-address">
+                                <span>CHECK PAYMENT</span>
+                            </label>
+                            <div class="text"><p>Please send a check to Store Name, Store Street, Store Town, <br />Store State / County, Store Postcode.</p></div>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="radio" name="ship-same-address">
+                                <span>PAYPAL</span>
+                            </label>
+                            <div class="img-box"><a href="#"><figure><img src="images/shop/paypal.png" alt=""></figure></a></div>
+                        </div>
+                        <div class="button"><button class="btn-one" type="submit">PLACE YOUR ORDER NOW</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- single shop end -->
+
+
+    <!-- instagram-section -->
+    <section class="instagram-section centred">
+        <div class="container">
+            <div class="instagram-title">FOLLOW @ INSTAGRAM</div>
+            <ul class="instagram-img-list clearfix">
+                <li><a href="#"><figure><img src="images/home/f1.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f2.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f3.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f4.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f5.jpg" alt=""></figure></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- instagram-section -->
+
+    
+    <!-- main footer -->
+
+    <!-- main footer end -->
+
+
+    <!-- footer bottom -->
+    <section class="footer-bottom footer-bottom-one centred">
+        <div class="container">
+            <div class="copyright">CopyrightS © 2018 <a href="#">BELFAST</a>. All rights reserved</div>
+        </div>
+    </section>
+    <!-- footer bottom -->
+
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-angle-up"></span></div>
+{% endblock %}
+
+
+<!--jquery js -->
+
+
+<!-- End of .page_wrapper -->
+
+<!-- Mirrored from azim.commonsupport.com/Belfast/checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jan 2021 14:33:14 GMT -->
+

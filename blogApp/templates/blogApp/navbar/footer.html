@@ -1,0 +1,163 @@
+{% load static %}
+
+<!-- <footer class="footer-style-four centred">
+    <div class="container">
+        <div class="social-style-five in-block">
+            <div class="single-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <div class="text">FACEBOOK <br />35,680</div>
+            </div>
+            <div class="single-social">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <div class="text">TWITTER <br />10,840</div>
+            </div>
+            <div class="single-social">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <div class="text">LINKEDIN <br />7,237</div>
+            </div>
+            <div class="single-social">
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+                <div class="text">PINTEREST <br />6,992</div>
+            </div>
+            <div class="single-social">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <div class="text">INSTAGRAM <br />4,407</div>
+            </div>
+        </div>
+        <div class="copyright">Copyrights © 2018 <a href="#">BELFAST</a>. All rights reserved</div>
+    </div>
+</footer> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="site-footer mrt-30">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="custom-container-content bg-black pd-t-80">
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            Start Footer Widget Area
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <div class="footer-widget-area">
+                        <div class="row">
+                            <!--~~~~~ Start Widget Location ~~~~~-->
+                            <div class="col-lg-4 col-md-6">
+                                <aside class="widget bt-location-widget">
+                                    <div class="widget-content">
+                                        <a class="footer-logo" href="index09.html">
+                                            <img src="{% static 'blogApp/assets/images/logo/footer-logo2.png' %}" alt="Footer Logo">
+                                        </a>
+                                        <div class="info-box">
+                                            <p>
+                                                Dannmondi 15 number Sheen Darus Salam. 112/B Road 8A,
+                                                Dhanmondi.
+                                            </p>
+                                        </div>
+                                        <div class="info-box">
+                                            <p>+880-036987458765521</p>
+                                            <p>
+                                                <a href="mailto:information@gmail.com">information@gmail.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </aside>
+                            </div>
+                            <!--~./ end location widget ~-->
+
+                            <!--~~~~~ Start Widget Links ~~~~~-->
+                            <div class="col-lg-2 col-md-6">
+                                <aside class="widget widget_links">
+                                    <h2 class="widget-title">Quick Links</h2>
+                                    <div class="widget-content">
+                                        <ul>
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="{% url 'draft'%}">Draft</a></li>
+                                            <li><a href="#">Services</a></li>
+                                            <li><a href="#">Stories</a></li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
+                            <!--~./ end links widget ~-->
+                            <!--~~~~~ Start Widget Links ~~~~~-->
+                            <div class="col-lg-2 col-md-6">
+                                <aside class="widget widget_links">
+                                    <h2 class="widget-title">Categories</h2>
+                                    <div class="widget-content">
+                                        <ul>
+                                            {% for cat in categories %}
+
+                                                <li><span>{{ cat.category }}</span></a>
+                                                    <span class="float-right">( {{cat.posts_count}} )</span>
+                                                </li>
+                               
+                                            {% endfor %}
+                                           
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
+                            <!--~./ end links widget ~-->
+
+                            <!--~~~~~ Start Instagram Widget~~~~~-->
+                            <div class="col-lg-4 col-md-6">
+                                <aside class="widget bt-instafeed-widget style-four">
+                                    <h4 class="widget-title">Instagram</h4>
+                                    <div class="widget-content">
+                                        <ul id="instafeed">
+                                            <li class="feed-item">
+                                                <a href="#">
+                                                    <img src="{% static 'blogApp/assets/images/widget/instagram/3/1.jpg' %}" alt="#">
+                                                </a>
+                                            </li>
+                                            <li class="feed-item">
+                                                <a href="#">
+                                                    <img src="{% static 'blogApp/assets/images/widget/instagram/3/2.jpg' %}" alt="#">
+                                                </a>
+                                            </li>
+                                            <li class="feed-item">
+                                                <a href="#">
+                                                    <img src="{% static 'blogApp/assets/images/widget/instagram/3/3.jpg' %}" alt="#">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <a href="#">visit us on instagram</a>
+                                    </div>
+                                </aside>
+                            </div>
+                            <!--~./ end instagram widget ~-->
+                        </div>
+                    </div>
+                    <!--~./ end footer widgets area ~-->
+
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            Start Footer Bottom Area
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <div class="footer-bottom-area">
+                        <div class="footer-bottom-content">
+                            <div class="copyright-text text-center">
+                                <p>
+                                    Copyright - 2021 Jimmy Blog by
+                                    <a href="#">soalinks</a>
+                                </p>
+                            </div>
+                            <!--~./ end copyright text ~-->
+                        </div>
+                    </div>
+                    <!--~./ end footer bottom area ~-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,68 @@
+.subscribe-section,
+.site-header.header-style-one.style-one .navigation-area,
+.site-header.header-style-one.style-one .header-logo-area:before,
+.sidebar-items.style-one .bt-socail-widget .widget-content,
+.site-header.header-style-one.style-one .header-logo-area {
+    background-color: #FBF2F2;
+}
+
+#sticky-header .site-header.header-style-one.style-one .navigation-area {
+    background-color: #332A2A;
+}
+
+.subscribe-section-content .subscribe-form #mc-form #subscribe-btn:hover,
+.topbutton,
+.read-more-wrap > .read-more:focus, 
+.read-more-wrap > .read-more:hover,
+.sidebar-items .widget-title,
+.search-wrap .search-form button, .search-wrap .search-form input[type="button"], 
+.search-wrap .search-form input[type="reset"], 
+.search-wrap .search-form input[type="submit"],
+.site-header.header-style-one .hamburger-menus > span,
+.site-main.style-three ~ .load-more-btn-area.style-one .load-more-btn,
+.site-main.style-four ~ .load-more-btn-area.style-one .load-more-btn:hover,
+.site-main.style-five ~ .load-more-btn-area.style-one .load-more-btn:hover {
+    background-color: #C97278;
+}
+
+.paging-navigation.style-one .nav-links > li.active > a, 
+.paging-navigation.style-one .nav-links > li > a:hover {
+    background-color: #C97278 !important;
+}
+
+.copyright-text a:hover,
+.entry-category > a,
+.entry-meta-content a:hover, 
+.entry-meta-content a:focus,
+.site-header.header-style-one.style-one.intro-element .intro-socail-share .socail-share a, .site-header.header-style-one.style-one .search-wrap > .search-btn, 
+.site-header.header-style-one.style-one .header-card-area > a,
+.subscribe-section-content:before,
+.post.post-grid-style .entry-user .author-name a:hover,
+.site-header .search-wrap > .search-btn:hover,
+.widget_links a:hover, 
+.widget_links a:focus, 
+.widget_meta a:hover, 
+.widget_meta a:focus, 
+.widget_nav_menu a:hover, 
+.widget_nav_menu a:focus,
+.bt-instafeed-widget.style-four .widget-content > a:hover, 
+.bt-instafeed-widget.style-four .widget-content > a:focus,
+.bt-location-widget .widget-content .info-box a:hover,
+.mobile-sidebar-menu .navigation .mainmenu > li > a.active, 
+.mobile-sidebar-menu .navigation .mainmenu > li > a:hover,
+.about-block .follow-me > a:hover {
+    color: #C97278;
+}
+.site-header.default-header-style .mainmenu li:hover > a, 
+.site-header.default-header-style .mainmenu > li > a:hover, 
+.site-header.default-header-style .mainmenu > li > a.active,
+.site-header.header-style-one .mainmenu li:hover > a, 
+.site-header.header-style-one .mainmenu > li > a:hover, 
+.site-header.header-style-one .mainmenu > li > a.active,
+.intro-element .intro-socail-share .socail-share a:hover {
+    color: #C97278 !important;
+}
+
+.sidebar-items .widget-title::before {
+	border-color: #C97278 transparent transparent;
+}

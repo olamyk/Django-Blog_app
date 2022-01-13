@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{% extends 'blogApp/base.html' %}
+{% load static %}
+{% block main_content %}
+
+<!-- Mirrored from azim.commonsupport.com/Belfast/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jan 2021 14:33:12 GMT -->
+
+
+
+    <!-- .preloader -->
+    <div class="preloader"></div>
+    <!-- /.preloader -->
+
+
+    <!-- menu-area -->
+
+    <!-- end menu-area -->
+
+
+    <!-- Hidden Bar -->
+    <!-- / Hidden Bar end -->
+
+
+    <!--Page Title-->
+    <section class="page-title centred">
+        <div class="container">
+            <h3 class="text">Cart</h3>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+
+    <!-- single shop -->
+    <section class="shop-cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 column">
+                    <div class="table-outer"> 
+                        <table class="cart-table"> 
+                            <thead class="cart-header">
+                                <tr>
+                                    <th class="prod-column">#</th>
+                                    <th>&nbsp;</th>
+                                    <th>Comment</th>
+                                    <th>Action</th>
+                                    
+                                </tr>
+                            </thead> 
+                            {% for items in comment_list %}              
+                            <tbody>
+                                <tr class="item">
+                                    <td colspan="2" class="image-box">
+                                        <div class="column-box">
+                                            
+                                            <div class="text">{{items.name}}</div>
+                                        </div>
+                                    </td>
+                                    <td class="sub-total">{{ items.body}}</td>
+                                    <td class="qty">
+                                        <div class="addto-cart-box">
+                                            <a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                        </div>
+                                    </td>
+                                    <td class="total">$45</td>
+                                    <td class="remove"></td>
+                                </tr>
+                                <!-- <tr class="item">
+                                    <td colspan="2" class="image-box">
+                                        <div class="column-box">
+                                            <figure class="prod-thumb"><a href="#"><img src="images/shop/2.png" alt=""></a></figure>
+                                            <div class="text">Casual Top Wear</div>
+                                        </div>
+                                    </td>
+                                    <td class="sub-total">$50</td>
+                                    <td class="qty">
+                                        <div class="addto-cart-box">
+                                            <input class="quantity-spinner" type="text" value="1" name="quantity">
+                                        </div>
+                                    </td>
+                                    <td class="total">$50</td>
+                                    <td class="remove"><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+                                </tr>                       -->
+                            </tbody>
+                            {% endfor %}
+                        </table>
+                    </div> 
+                </div>
+            </div>
+            <div class="cart-box">
+                <div class="cart-one"><a href="#">CONTINUE SHOPPING</a></div>
+                <div class="cart-two"><button type="button">UPDATE SHOPPING CART</button></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 cart-column">
+                    <div class="coupon-code cart-box">
+                        <h5>Coupon Code</h5>
+                        <div class="text">Enter your coupon code if you have one..</div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your code">
+                            <button type="submit">APPLY COUPON CODE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-5 cart-column">
+                    <div class="cart-total">
+                        <h5>Cart Total</h5>
+                        <div class="text">Sub-Total<span>$95</span></div>
+                        <div class="text">GRAND Total<span>$95</span></div>
+                        <div class="button"><a href="#" class="btn-one">PROCEED TO CHECKOUT</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- single shop end -->
+
+
+    <!-- instagram-section -->
+    <section class="instagram-section centred">
+        <div class="container">
+            <div class="instagram-title">FOLLOW @ INSTAGRAM</div>
+            <ul class="instagram-img-list clearfix">
+                <li><a href="#"><figure><img src="images/home/f1.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f2.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f3.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f4.jpg" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="images/home/f5.jpg" alt=""></figure></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- instagram-section -->
+
+    
+    <!-- main footer -->
+   
+    <!-- main footer end -->
+
+
+    <!-- footer bottom -->
+    <section class="footer-bottom footer-bottom-one centred">
+        <div class="container">
+            <div class="copyright">CopyrightS © 2018 <a href="#">BELFAST</a>. All rights reserved</div>
+        </div>
+    </section>
+    <!-- footer bottom -->
+
+
+{% endblock %}
+<!-- Mirrored from azim.commonsupport.com/Belfast/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jan 2021 14:33:14 GMT -->
+</html>

@@ -1,0 +1,98 @@
+{% extends 'blogApp/base.html' %}
+{% load static %}
+{% block main_content %}
+{% load crispy_forms_tags %}
+<!-- Mirrored from azim.commonsupport.com/Belfast/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jan 2021 14:32:43 GMT -->
+
+
+<!-- page wrapper -->
+
+
+
+    <!-- .preloader -->
+    <div class="preloader"></div>
+    <!-- /.preloader -->
+
+
+    <!-- menu-area -->
+
+    <!-- end menu-area -->
+
+
+    <!-- Hidden Bar -->
+    <section class="hidden-bar right-align">
+        
+        <div class="hidden-bar-closer">
+            <button class="btn"><i class="fa fa-close"></i></button>
+        </div>
+        
+    </section><!-- / Hidden Bar end -->
+
+
+    <!-- about section -->
+
+    <section class="about-section sp-seven rn-section">
+ 
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <figure><img src="{% static 'blogApp/images/home/f1.jpg' %}" alt=""></figure>
+                    <figure><img src="{% static 'blogApp/images/home/f2.jpg' %}" alt=""></figure>
+                    <figure><img src="{% static 'blogApp/images/home/f3.jpg' %}" alt=""></figure>
+                    <figure><img src="{% static 'blogApp/images/home/f4.jpg' %}" alt=""></figure>
+                    <figure><img src="{% static 'blogApp/images/home/f5.jpg' %}" alt=""></figure>
+                </div>
+                <div class="col-lg-8">
+
+                    <!-- Contact Form-->
+                    <h2 class="rn-simple-title text-center">Edit an account on RantzBlog</h2>
+                    <div class="rn-contact-form bg-success">
+                        <form method='POST' enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{u_form | crispy}}
+                            {{p_form | crispy}}
+                           
+                            <input type='submit' class="btn btn-dark" value="Update"/>
+                        </form>
+
+                    </div>
+                    <!-- End Contact Form-->
+                    
+                </div>
+                <div class="col-lg-2">
+                    
+                        <figure><img src="{% static 'blogApp/images/home/f1.jpg' %}" alt=""></figure>
+                        <figure><img src="{% static 'blogApp/images/home/f2.jpg' %}" alt=""></figure>
+                        <figure><img src="{% static 'blogApp/images/home/f3.jpg' %}" alt=""></figure>
+                        <figure><img src="{% static 'blogApp/images/home/f4.jpg' %}" alt=""></figure>
+                        <figure><img src="{% static 'blogApp/images/home/f5.jpg' %}" alt=""></figure>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+
+
+    
+    <!-- main footer -->
+   
+    <!-- main footer end -->
+
+
+
+
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-angle-up"></span></div>
+{% endblock %}
+
+
+<!--jquery js -->
+
+
+<!-- End of .page_wrapper -->
+
+<!-- Mirrored from azim.commonsupport.com/Belfast/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jan 2021 14:32:44 GMT -->
+

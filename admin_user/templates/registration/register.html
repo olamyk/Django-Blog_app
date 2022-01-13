@@ -1,0 +1,79 @@
+{% extends 'blogApp/base.html' %}
+{% load static %}
+{% block main_content %}
+{% load crispy_forms_tags %}
+
+
+
+
+
+
+    <div class="contact-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <div class="contact-content-area text-center">
+                        <h2 class="heading">Registration Form </h2>
+                        <p>If you would like to join us on our journey around the world and beyond, 
+                            then you can follow us on asocial media channels</p>
+                        <div class="contact-form-area col-6 offset-3 bg-primary">
+
+                            <form method="POST" id="contact_form" class="contact-form p-3">
+                                {% csrf_token %}
+                                {{ form | crispy }}
+                                <br>
+                                <input type="submit" class="btn btn-primary" value="SUBMIT">
+                            </form>
+                            <!-- /.contact-form -->
+                        </div>
+                        <div class="contact-content">
+                            
+                            <div class="follow-me">
+                                Follow Me :
+                                <a href="#"><span class="fab fa-behance"></span></a>
+                                <a href="#"><span class="fab fa-vimeo-v"></span></a>
+                                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                <a href="#"><span class="fab fa-twitter"></span></a>
+                                <a href="#"><span class="fab fa-instagram"></span></a>
+                                <a href="#"><span class="fab fa-pinterest-p "></span></a>
+                            </div>
+                        </div>
+                        <div id="gmaps"></div>
+                        <!-- /.contact-form-area -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--~./ end contact block ~-->
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Start Subscribe Section
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="subscribe-section style-two">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="subscribe-section-content mr-0">
+                        <div class="section-header">
+                            <h2 class="title">Subscribe</h2>
+                            <p>Subscribe Now To Get Daily Updates</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <!-- Subscribe form -->
+                            <form class="dv-form" id="mc-form">
+                                <div class="form-group">
+                                    <input id="mc-email" name="EMAIL" placeholder="Email Address" type="email" />
+                                    <button class="btn btn-default" name="Subscribe" id="subscribe-btn" type="submit">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+.site-header.default-header-style .header-download-area {
+    background-color: #353247;
+}
+.site-header.default-header-style .header-download-area .download-area-content button {
+    background-color: #535162;
+}
+.subscribe-section-content .subscribe-form .form-group input[type="email"],
+.tb-subscribe-widget .subscribe-form .form-group input[type="email"] {
+    background-color: #EEECF9;
+}
+
+.subscribe-section-content .subscribe-form #mc-form #subscribe-btn:hover,
+.topbutton,
+.read-more-wrap > .read-more:focus, 
+.read-more-wrap > .read-more:hover,
+.sidebar-items .widget-title,
+.search-wrap .search-form button, .search-wrap .search-form input[type="button"], 
+.search-wrap .search-form input[type="reset"], 
+.search-wrap .search-form input[type="submit"],
+.site-header.header-style-one .hamburger-menus > span,
+.post-slider-four .read-more-share .read-more-wrap > .read-more,
+.site-main ~ .load-more-btn-area.style-one .load-more-btn:hover,
+.tb-subscribe-widget .subscribe-form #mc-form #subscribe-btn,
+.tb-signup-widget .signup-form .btn-default:hover {
+    background-color: #8079A5;
+}
+
+.paging-navigation.style-one .nav-links > li.active > a, 
+.paging-navigation.style-one .nav-links > li > a:hover {
+    background-color: #8079A5 !important;
+}
+.tb-subscribe-widget .subscribe-form #mc-form #subscribe-btn:hover {
+    background-color: #000;
+}
+.copyright-text a:hover,
+.entry-category > a,
+.entry-meta-content a:hover, 
+.entry-meta-content a:focus,
+.site-header.header-style-one.style-one.intro-element .intro-socail-share .socail-share a, .site-header.header-style-one.style-one .search-wrap > .search-btn, 
+.site-header.header-style-one.style-one .header-card-area > a,
+.site-header .search-wrap > .search-btn:hover,
+.post-slider-four .share-post .social-share a:hover, 
+.post-slider-four .share-post .social-share a:focus,
+.footer-bottom-area .socail-share-text > a:hover,
+.intro-element .intro-socail-share .socail-share a,
+.site-header .search-wrap > .search-btn,
+.header-card-area > a,
+.entry-category > a::after,
+.site-main ~ .load-more-btn-area.style-one .load-more-btn,
+.bt-location-widget .widget-content .info-box a:hover,
+.widget_links a:hover, 
+.widget_links a:focus, 
+.widget_meta a:hover,
+.bt-instafeed-widget.style-four .widget-content > a:hover, 
+.bt-instafeed-widget.style-four .widget-content > a:focus,
+.post.post-grid-style .entry-user .author-name a:hover {
+    color: #6F6798;
+}
+.site-header.header-style-one .mainmenu li:hover > a, 
+.site-header.header-style-one .mainmenu > li > a:hover, 
+.site-header.header-style-one .mainmenu > li > a.active,
+.intro-element .intro-socail-share .socail-share a:hover,
+.site-header.default-header-style .mainmenu li:hover > a, 
+.site-header.default-header-style .mainmenu > li > a:hover, 
+.site-header.default-header-style .mainmenu > li > a.active {
+    color: #6F6798 !important;
+}
+
+.sidebar-items .widget-title::before {
+	border-color: #8079A5 transparent transparent;
+}
+
+.subscribe-section-content::before {
+	color: #9B8CEC;
+}

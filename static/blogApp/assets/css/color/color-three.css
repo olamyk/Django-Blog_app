@@ -1,0 +1,48 @@
+.subscribe-section-content .subscribe-form #mc-form #subscribe-btn:hover,
+.topbutton,
+.read-more-wrap > .read-more:focus, 
+.read-more-wrap > .read-more:hover,
+.sidebar-items .widget-title,
+.search-wrap .search-form button, .search-wrap .search-form input[type="button"], 
+.search-wrap .search-form input[type="reset"], 
+.search-wrap .search-form input[type="submit"],
+.feature-item.style-three,
+.site-header.header-style-one .hamburger-menus > span,
+.post-slider-four .read-more-share .read-more-wrap > .read-more {
+    background-color: #47B9B4;
+}
+
+.paging-navigation.style-one .nav-links > li.active > a, 
+.paging-navigation.style-one .nav-links > li > a:hover {
+    background-color: #47B9B4 !important;
+}
+
+.copyright-text a:hover,
+.entry-category > a,
+.entry-meta-content a:hover, 
+.entry-meta-content a:focus,
+.site-header.header-style-one.style-one.intro-element .intro-socail-share .socail-share a, .site-header.header-style-one.style-one .search-wrap > .search-btn, 
+.site-header.header-style-one.style-one .header-card-area > a,
+.site-header .search-wrap > .search-btn:hover,
+.post-slider-four .share-post .social-share a:hover, 
+.post-slider-four .share-post .social-share a:focus,
+.footer-bottom-area .socail-share-text > a:hover,
+.intro-element .intro-socail-share .socail-share a,
+.site-header .search-wrap > .search-btn,
+.header-card-area > a,
+.post .entry-user .author-name a:hover {
+    color: #47B9B4;
+}
+.site-header.header-style-one .mainmenu li:hover > a, 
+.site-header.header-style-one .mainmenu > li > a:hover, 
+.site-header.header-style-one .mainmenu > li > a.active,
+.intro-element .intro-socail-share .socail-share a:hover,
+.site-header.default-header-style .mainmenu li:hover > a, 
+.site-header.default-header-style .mainmenu > li > a:hover, 
+.site-header.default-header-style .mainmenu > li > a.active {
+    color: #47B9B4 !important;
+}
+
+.sidebar-items .widget-title::before {
+	border-color: #47B9B4 transparent transparent;
+}

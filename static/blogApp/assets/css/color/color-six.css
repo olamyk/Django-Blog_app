@@ -1,0 +1,74 @@
+.entry-category > a,
+.entry-category > a::after,
+.entry-meta-content a:hover, 
+.entry-meta-content a:focus {
+    color: #5e5e5e;
+}
+.site-header.header-style-one .navigation .mainmenu > li > a,
+#sticky-header .site-header .navigation .mainmenu > li > a,
+.site-header.header-style-one .mainmenu li:hover > a, 
+.site-header.header-style-one .mainmenu > li > a:hover, 
+.site-header.header-style-one .mainmenu > li > a.active,
+#sticky-header .site-header .navigation .mainmenu > li > a:hover,
+#sticky-header .site-header .navigation .mainmenu > li > a.active {
+    color: #000 !important;
+}
+.site-header.header-style-one .mobile-sidebar-menu .navigation .mainmenu > li > a {
+    color: #fff !important;
+}
+.mobile-sidebar-menu .navigation .megamenu .megamenu-main .custom-megamenu li a:hover {
+    color: #b0b0b0 !important;
+}
+.subscribe-section-content .subscribe-form .form-group input[type="email"] {
+    background-color: #fff;
+}
+.site-header.header-style-one .navigation .mainmenu > li > a > .menu-arrow,
+#sticky-header .site-header .navigation .mainmenu > li > a > .menu-arrow {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.site-header.header-style-one .mobile-sidebar-menu .navigation .mainmenu > li > a > .menu-arrow {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar-items .widget-title,
+.tb-signup-widget,
+.site-header.header-style-one .navigation-area,
+.subscribe-section.style-two .subscribe-section-content,
+.tb-subscribe-widget .subscribe-form .form-group input[type="email"] {
+    background-color: #E7FAF9;
+}
+.sidebar-items.style-three .widget-title {
+    color: #000;
+}
+
+.paging-navigation.style-one .nav-links > li > a {
+    background-color: #E7FAF9 !important;
+    color: #000 !important;
+}
+
+.paging-navigation.style-one .nav-links > li.active > a, 
+.paging-navigation.style-one .nav-links > li > a:hover {
+    background-color: #3C3C3C !important;
+    color: #fff !important;
+}
+.site-header.header-style-one .header-card-area > a > sup {
+    color: #fff;
+}
+.sidebar-items .widget-title::before {
+	border-color: #8B85AD transparent transparent;
+}
+.subscribe-section-content .subscribe-form .btn-default,
+.tb-subscribe-widget .subscribe-form #mc-form #subscribe-btn,
+.topbutton {
+    background-color: #313131;
+}
+.subscribe-section-content .subscribe-form .btn-default:hover,
+.tb-subscribe-widget .subscribe-form #mc-form #subscribe-btn:hover,
+.read-more-wrap > .read-more:focus, .read-more-wrap > .read-more:hover,
+.tb-signup-widget .signup-form .btn-default:hover {
+    background-color: #000;
+}
+.subscribe-section.style-two .subscribe-section-content:before {
+	color: #7EC5C1;
+}

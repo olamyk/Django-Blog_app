@@ -1,0 +1,234 @@
+{% extends 'blogApp/base.html' %}
+{% load static %}
+{% block main_content %}
+{% load crispy_forms_tags %}
+
+
+
+
+   
+                        <!-- <div class="contact-form-area">
+                            <form method="POST">
+                                {% csrf_token %}
+                                {{form.as_p}}
+                                <input type="submit" value="SUBMIT" class="btn btn-primary">
+                                
+                            </form> -->
+
+
+
+                            <!-- <div class="contact-block">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="contact-content-area">
+                                                <div class="contact-content text-center">
+                                                    <h2 class="heading">Login Form </h2>
+                                                    <p>If you would like to join us on our journey around the world and beyond, then you can follow us on a
+                                                        social media channels</p>
+                                                    <div class="follow-me">
+                                                        Follow Me :
+                                                        <a href="#"><span class="fab fa-behance"></span></a>
+                                                        <a href="#"><span class="fab fa-vimeo-v"></span></a>
+                                                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                                        <a href="#"><span class="fab fa-twitter"></span></a>
+                                                        <a href="#"><span class="fab fa-instagram"></span></a>
+                                                        <a href="#"><span class="fab fa-pinterest-p "></span></a>
+                                                    </div>
+                                                </div>
+                                                <div id="gmaps"></div>
+                                                <div class="contact-form-area  contact-content text-center" >
+                        
+                                                    <form method="POST" id="contact_form" class="contact-form">
+                                                        {% csrf_token %}
+                                                        {{ form | crispy }}
+                                                        <br>
+                                                        <input type="submit" class="btn btn-primary" value="SUBMIT">
+                                                        <a href="{% url 'password_reset' %}"><input class="btn btn-primary" value="Reset Password"> </a>
+                                                    </form> -->
+                                                    <!-- /.contact-form -->
+                                                <!-- </div>/.contact-form-area -->
+                                            <!-- </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--~./ end contact block ~-->
+                        
+                            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          Start Subscribe Section
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                            <!-- <div class="subscribe-section style-two">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <div class="subscribe-section-content mr-0">
+                                                <div class="section-header">
+                                                    <h2 class="title">Subscribe</h2>
+                                                    <p>Subscribe Now To Get Daily Updates</p>
+                                                </div>
+                                                <div class="subscribe-form"> -->
+                                                    <!-- Subscribe form -->
+                                                    <!-- <form class="dv-form" id="mc-form">
+                                                        <div class="form-group">
+                                                            <input id="mc-email" name="EMAIL" placeholder="Email Address" type="email" />
+                                                            <button class="btn btn-default" name="Subscribe" id="subscribe-btn" type="submit">
+                                                                Subscribe
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+            
+
+
+
+
+
+
+
+
+                            <div class="account-pages my-5 pt-sm-5">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8 col-lg-6 col-xl-5">
+                                            <div class="card overflow-hidden">
+                                                <div class="bg-soft-primary">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                            <div class="text-primary p-4">
+                                                                <h5 class="text-primary">Welcome Back To Myblog!</h5>
+                                                                <p class=" text-center">Sign in to continue.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5 align-self-end">
+                                                            <img src="{% static 'blogApp/assets/images/profile-img.png' %}" alt="" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body pt-0 bg-primary"> 
+                                                    <div>
+                                                        <a href="index.html">
+                                                            <div class="avatar-md profile-user-wid mb-4">
+                                                                <span class="avatar-title rounded-circle bg-light">
+                                                                    <img src="{% static 'blogApp/assets/images/logo.svg' %}" alt="" class="rounded-circle" height="34">
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class=" col-6 offset-3 p-2">
+
+                                                        <form method="POST" id="" class="contact-form">
+                                                            {% csrf_token %}
+                                                            {{ form | crispy }}
+                                                            <br>
+                                                            <input type="submit" class="btn btn-primary bg-light text-center" value="SUBMIT">
+                                                        
+
+                                                            <div class="mt-4 text-center">
+                                                                <h5 class="font-size-45 mb-3">Sign in with</h5>
+                                
+                                                                <ul class="list-inline">
+                                                                    <li class="list-inline-item">
+                                                                        <a href="javascript::void()" class="social-list-item ">
+                                                                            <i class="mdi mdi-facebook"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="list-inline-item">
+                                                                        <a href="javascript::void()" class="social-list-item" >
+                                                                            <i class="mdi mdi-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="list-inline-item">
+                                                                        <a href="javascript::void()" class="social-list-item ">
+                                                                            <i class="mdi mdi-google"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                    
+                                                            <div class="mt-4 text-center text-white">
+                                                                <a href="{% url 'password_reset' %}" ><i class="mdi mdi-lock mr-1"></i> Forgot your password?</a>
+                                                            </div>
+                                                            <div class="mt-4 text-center text-white">
+                                                                <a href="{% url 'change_password' %}" ><i class="mdi mdi-lock mr-1"></i> Change password?</a>
+                                                            </div>
+                                                        </form>
+
+
+
+
+                                                        <!-- <form class="form-horizontal" action="https://themesbrand.com/skote-mvc/layouts/index.html">
+                            
+                                                            <div class="form-group">
+                                                                <label for="username">Username</label>
+                                                                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                                            </div>
+                                    
+                                                            <div class="form-group">
+                                                                <label for="userpassword">Password</label>
+                                                                <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                                            </div>
+                                    
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                                                <label class="custom-control-label" for="customControlInline">Remember me</label>
+                                                            </div>
+                                                            
+                                                            <div class="mt-3">
+                                                                <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Log In</button>
+                                                            </div>
+                                
+                                                           
+                    
+                                                            <div class="mt-4 text-center">
+                                                                <h5 class="font-size-14 mb-3">Sign in with</h5>
+                                
+                                                                <ul class="list-inline">
+                                                                    <li class="list-inline-item">
+                                                                        <a href="javascript::void()" class="social-list-item bg-primary text-white border-primary">
+                                                                            <i class="mdi mdi-facebook"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="list-inline-item">
+                                                                        <a href="javascript::void()" class="social-list-item bg-info text-white border-info">
+                                                                            <i class="mdi mdi-twitter"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="list-inline-item">
+                                                                        <a href="javascript::void()" class="social-list-item bg-danger text-white border-danger">
+                                                                            <i class="mdi mdi-google"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                    
+                                                            <div class="mt-4 text-center">
+                                                                <a href="auth-recoverpw.html" class="text-muted"><i class="mdi mdi-lock mr-1"></i> Forgot your password?</a>
+                                                            </div>
+                                                        </form> -->
+                                                    </div>
+                                
+                                                </div>
+                                            </div>
+                                            <div class="mt-5 text-center">
+                                                
+                                                <div>
+                                                    <p>Don't have an account ? <a href="auth-register.html" class="font-weight-medium text-primary"> Signup now </a> </p>
+                                                    <p>© <script>document.write(new Date().getFullYear())</script> Skote. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+{% endblock %}
+
+

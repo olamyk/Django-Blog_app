@@ -1,0 +1,709 @@
+{% extends 'blogApp/base.html' %}
+{% load static %}
+{% block main_content %}
+{% load humanize %}
+
+
+
+    <!-- <section class="main-slider rev_slider_wrapper centred">
+        <div class="container-fluid">
+            <ul class="main-slider-carousel owl-carousel owl-theme slide-nav">
+                <li class="slider-wrapper">
+                    <div class="image"><img src="{% static 'blogApp/images/home4/slider.jpg' %}" alt=""></div>
+                    <div class="slider-caption">
+                        <div class="container">
+                            <div class="slide-content-box">
+                                <div class="blog-content-one centred">
+                                    <div class="top-content">
+                                        <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                        <div class="title"><h4>Never heard the word impossible</h4></div>
+                                        <div class="date"><span>On</span> AUGUST 27, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> PAUL JOHN HEYMAN</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                             
+                    </div>
+                    <div class="slide-overlay"></div>
+                </li>
+                <li class="slider-wrapper">
+                    <div class="image"><img src="{% static 'blogApp/images/home4/slider.jpg' %}" alt=""></div>
+                    <div class="slider-caption">
+                        <div class="container">
+                            <div class="slide-content-box">
+                                <div class="blog-content-one centred">
+                                    <div class="top-content">
+                                        <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                        <div class="title"><h4>Never heard the word impossible</h4></div>
+                                        <div class="date"><span>On</span> AUGUST 27, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> PAUL JOHN HEYMAN</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                    <div class="slide-overlay"></div>
+                </li>
+                <li class="slider-wrapper">
+                    <div class="image"><img src="{% static 'blogApp/images/home4/slider-2.png' %}" alt=""></div>
+                    <div class="slider-caption">
+                        <div class="container">
+                            <div class="slide-content-box">
+                                <div class="blog-content-one centred">
+                                    <div class="top-content">
+                                        <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                        <div class="title"><h4>Let your soul travel before your heart does!</h4></div>
+                                        <div class="date"><span>On</span> AUGUST 27, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> SAAD JIMMY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                    <div class="slide-overlay"></div>
+                </li>
+            </ul>
+        </div>
+    </section> -->
+
+    <!-- main-slider end -->
+
+
+    <!-- carousel-style-one -->
+    
+    <!-- <section class="carousel-style-one mar-bottom-100">
+        
+        <div class="single-item-carousel-overlay owl-control-none">
+
+
+        
+  
+
+
+            {% for post in post_list %}
+            <div class="single-item">
+                <div class="single-item-overlay">
+                    <div class="img-box">
+                        <img src="/media/{{ post.featured_image }}" alt="" style="width: 270px; height: 200px;">
+                        <div class="overlay">
+                            <div class="inner-box">
+                                <div class="content blog-content-one">
+                                    <div class="meta-text"><a href="#">Travel</a></div>
+                                    <div class="title"><h6><a href="post2.html">Love Boat soon will be making<br /> another run</a></h6></div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+             {% endfor %}
+        
+            <div class="single-item">
+                <div class="single-item-overlay">
+                    <div class="img-box">
+                        <img src="{% static 'blogApp/images/home4/2.jpg' %}" alt="">
+                        <div class="overlay">
+                            <div class="inner-box">
+                                <div class="content blog-content-one">
+                                    <div class="meta-text"><a href="#">BEAUTY</a></div>
+                                    <div class="title"><h6><a href="post2.html">The professor and Mary Ann here<br /> on Gilligans</a></h6></div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="single-item-overlay">
+                    <div class="img-box">
+                        <img src="{% static 'blogApp/images/home4/3.jpg' %}" alt="">
+                        <div class="overlay">
+                            <div class="inner-box">
+                                <div class="content blog-content-one">
+                                    <div class="meta-text"><a href="#">Lifestyle</a></div>
+                                    <div class="title"><h6><a href="post2.html">Call him flipper flipper faster<br /> than lightning</a></h6></div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="single-item-overlay">
+                    <div class="img-box">
+                        <img src="{% static 'blogApp/images/home4/4.jpg' %}" alt="">
+                        <div class="overlay">
+                            <div class="inner-box">
+                                <div class="content blog-content-one">
+                                    <div class="meta-text"><a href="#">Music</a></div>
+                                    <div class="title"><h6><a href="post2.html">A maximum security stockade to<br /> Los Angeles</a></h6></div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-item">
+                <div class="single-item-overlay">
+                    <div class="img-box">
+                        <img src="{% static 'blogApp/vimages/home4/5.jpg' %}" alt="">
+                        <div class="overlay">
+                            <div class="inner-box">
+                                <div class="content blog-content-one">
+                                    <div class="meta-text"><a href="#">Fashion</a></div>
+                                    <div class="title"><h6><a href="post2.html">East side to a deluxe apartment<br /> in the sky</a></h6></div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section> -->
+   
+    <!-- carousel-style-one end -->
+
+
+    <!-- blog side -->
+    <!-- <section class="blog-side blog-style-one blog-style-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-12 col-xs-12 content-side">
+                    <div class="blog-details-content">
+                        <div class="row"> -->
+
+
+
+                            
+                           
+                            
+
+
+                            <!-- {% for post in post_list %}
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12" style="margin-right: -2rem;">
+                                
+                                <div class="content-box overlay-item">
+                                   
+                                    <div class="inner-box">
+                                        <div class="image-box">
+                                            <figure class="image" style="width: 384px;height: 250px;" ><img src="/media/{{ post.featured_image }}" alt="" ></figure>
+                                            <div class="overlay-box">
+                                                <div class="overlay-inner">
+                                                    <div class="content">
+                                                        <a href="post1.html"><i class="fa fa-link"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content-one blog-content-one sp-six centred">
+                                        <div class="top-content">
+                                            <div class="meta-text"><a href="#">{{post.category}}</a></div>
+                                            <div class="title"><h4><a href="blogApp/post_detail/{{post.id}}">{{post.title}}</a></h4></div>
+                                            <div class="date"><span>On</span>  {{post.published_date}}&nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> {{post.author}}</div>
+                                        </div>
+                                        
+                                        <ul class="meta-list centred">
+                                            <li><a href="{% url 'comment' post.id %}"><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp; 19</a> &nbsp; <i class="flaticon-circle"></i> &nbsp; <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i>&nbsp; 13</a></li>
+                                            <li><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> &nbsp;Share</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+                   
+                            
+
+                        </div> -->
+
+
+                        <!-- <nav aria-label="Page navigation conatiner">
+                            {% if post_list.has_other_pages %}
+                           <ul class="pagination justify-content-center">
+                                {% if post_list.has_previous %}
+                                <li><a href="?page={{ post_list.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+                               {% endif %}
+                               {% if post_list.has_next %}
+                               <li><a href="?page={{ post_list.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+                               {% endif %}
+                            </ul>
+                            {% endif %}
+                        </nav> -->
+                        <!-- <ul class="page-pagination page-pagination centred">
+                            <li><a href="#"><i class="fa fa-angle-left"></i>&nbsp;&nbsp;&nbsp;PREV</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#" class="active">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">NEXT&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a></li>
+                        </ul> -->
+                    <!-- </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12 sidebar-side">
+                    <div class="sidebar-content">
+                        <div class="sidebar-about centred">
+                            <div class="sidebar-title">ABOUT ME</div>
+                            <figure class="img-box"><img src="{% static 'blogApp/images/home/1.jpg' %}" alt=""></figure>
+                            <h5 class="name">Saad Jimmy</h5>
+                            <div class="text"><p>These days are all share them with me oh baby just sit right back and you will hear a tale a tale of a fateful trip that started.</p></div>
+                            <ul class="social-link">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-post">
+                           
+                            <div class="sidebar-title">RECENT POST</div>
+                            {% for post in post_list %}
+                            <div class="single-post">
+                                 
+                                <div class="img-box"><a href="post1.html"><figure><img src="/media/{{ post.featured_image }}" alt=""></figure></a></div>
+                                <h6><a href="blogApp/post_detail/{{post.id}}">{{post.title}}</a></h6>
+                                <div class="text">{{post.published_date}}</div>
+                                
+                            </div>
+                            {% endfor %}
+                            <div class="single-post">
+                                <div class="img-box"><a href="post1.html"><figure><img src="{% static 'blogApp/images/home/p2.jpg' %}" alt=""></figure></a></div>
+                                <h6><a href="post1.html">Life support systems return</a></h6>
+                                <div class="text">MAY 19, 2018</div>
+                            </div>
+                            <div class="single-post">
+                                <div class="img-box"><a href="post1.html"><figure><img src="{% static 'blogApp/images/home/p3.jpg' %}" alt=""></figure></a></div>
+                                <h6><a href="post1.html">Eoner on a crusade</a></h6>
+                                <div class="text">AUGUST 09, 2018</div>
+                            </div>
+                            <div class="single-post">
+                                <div class="img-box"><a href="post1.html"><figure><img src="{% static 'blogApp/images/home/p4.jpg' %}" alt=""></figure></a></div>
+                                <h6><a href="post1.html">Aboard were expecting you</a></h6>
+                                <div class="text">SEPTEMBER 10, 2018</div>
+                            </div>
+                            <div class="single-post">
+                                <div class="img-box"><a href="post1.html"><figure><img src="{% static 'blogApp/images/home/p5.jpg' %}" alt=""></figure></a></div>
+                                <h6><a href="post1.html">Our dreams come true</a></h6>
+                                <div class="text">OCTOBER 09, 2018</div>
+                            </div>
+                        </div>
+                        <div class="sidebar-newsletter centred">
+                            <div class="title"><i class="fa fa-envelope-o"></i>&nbsp;&nbsp;NEWSLETTER</div>
+                            <div class="text">These days are all share them wit me</div>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Your Email Address" required="">
+                                    <button type="submit" class="btn-one">SUBSCRIBE</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sidebar-instagram">
+                            <div class="sidebar-title">INSTAGRAM</div>
+                            <ul class="img-list clearfix"> 
+                                <li><figure class="img-box"><a href="#"><img src="{% static 'blogApp/images/home/i1.jpg' %}" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="{% static 'blogApp/images/home/i2.jpg' %}" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="{% static 'blogApp/images/home/i3.jpg' %}" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="{% static 'blogApp/images/home/i4.jpg' %}" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="{% static 'blogApp/images/home/i5.jpg' %}" alt=""></a></figure></li>
+                                <li><figure class="img-box"><a href="#"><img src="{% static 'blogApp/images/home/i6.jpg' %}" alt=""></a></figure></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-categories">
+                            <div class="sidebar-title">CATEGORIES</div>
+                            <ul class="categories-list">
+                                {% if post in post_count %}
+                               
+                                <li><a href="#">All Categories<span>({{ post.p_count}})</span></a></li>
+                               
+                                {% endif %}
+                                <li><a href="#">Beauty<span>{{ get_it }}</span></a></li>
+                                <li><a href="#">Dressing<span>(8)</span></a></li>
+                                <li><a href="#">Fitness <span>(7)</span></a></li>
+                                <li><a href="#">Lifestyle<span>(6)</span></a></li>
+                                <li><a href="#">Travel<span>(9)</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-img-content">
+                            <div class="single-item">
+                                <figure class="img-box"><img src="{% static 'blogApp/images/home/12.jpg' %}" alt=""></figure>
+                                 <div class="inner-box">
+                                    <div class="content">
+                                        <div class="meta-text"><a href="#">Travel</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-item">
+                                <figure class="img-box"><img src="{% static 'blogApp/images/home/13.jpg' %}" alt=""></figure>
+                                 <div class="inner-box">
+                                    <div class="content">
+                                        <div class="meta-text"><a href="#">MUSIC</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+     <!-- blog side end -->
+
+
+    <!-- instagram-section -->
+    <!-- <section class="instagram-section centred">
+        <div class="container">
+            <div class="instagram-title">FOLLOW @ INSTAGRAM</div>
+            <ul class="instagram-img-list clearfix">
+                <li><a href="#"><figure><img src="{% static 'blogApp/images/home/f1.jpg' %}" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="{% static 'blogApp/images/home/f2.jpg' %}" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="{% static 'blogApp/images/home/f3.jpg' %}" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="{% static 'blogApp/images/home/f4.jpg' %}" alt=""></figure></a></li>
+                <li><a href="#"><figure><img src="{% static 'blogApp/' %} images/home/f5.jpg' %}" alt=""></figure></a></li>
+            </ul>
+        </div>
+    </section> -->
+    <!-- instagram-section -->
+
+    <!--Scroll to top-->
+
+    <!-- footer-style-four -->
+ 
+<!-- End of .page_wrapper -->
+
+<!-- Mirrored from azim.commonsupport.com/Belfast/index4.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Jan 2021 14:32:07 GMT -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="frontpage-slider-posts-with-feature pd-t-40">
+    <div class="container-fluid">
+        <div class="row gutters-12">
+            <div class="col-lg-12">
+                <!--~~~~~ Start Post ~~~~~-->
+                <article class="post hentry post-slider-two text-center">
+                    <div class="entry-thumb">
+                        <figure class="thumb-wrap">
+                            <a href="single-post.html">
+                                <img src="{% static 'blogApp/assets/images/post/slider/five/2.jpg' %}" alt="post" />
+                            </a>
+                        </figure>
+                        <!--./ thumb-wrap -->
+                    </div>
+                    <!--./ entry-thumb -->
+                    <div class="content-entry-wrap-overlay">
+                        <div class="content-entry-wrap">
+                            <div class="entry-meta-content">
+                                <div class="entry-author">
+                                    By <a href="#">Zohan Alex</a>
+                                </div>
+                                <!--./ entry-date -->
+                                <div class="entry-date">
+                                    On <span>Jan23 - 20</span>
+                                </div>
+                                <!--./ entry-date -->
+                            </div>
+                            <!--./ entry-meta-content -->
+                            <h3 class="entry-title">
+                                <a href="single-post.html">Embrace nature on land and sea in Tromsø, Norway</a>
+                            </h3>
+                            <!--./ entry-title -->
+                            <div class="entry-content">
+                                <div class="read-more-wrap">
+                                    <a class="read-more" href="single-post.html">READ MORE</a>
+                                </div>
+                            </div>
+                            <!--./ entry-content -->
+                        </div>
+                        <!--./ content-entry-wrap -->
+                    </div>
+                </article>
+                <!--~./ end post ~-->
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!--~./End frontpage slider posts with feature ~-->
+
+
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Start Main Wrapper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<div class="main-wrapper pd-b-80">
+    <div class="container">
+        <div class="row justify-content-between gutters-40">
+            <div class="col-lg-9 main-wrapper-content">
+                <!--~~~~~ Start Site Main ~~~~~-->
+                <main class="site-main">
+                    <div class="row">
+                        <!--~~~~~ Start Post ~~~~~-->
+                        
+                        <!--~./ end post ~-->
+                        {% for post in post_list %}
+                        <!--~~~~~ Start Post ~~~~~-->
+                        <div class="col-lg-6 col-md-6">
+                            <article class="post hentry post-grid style-three">
+                                <div class="entry-thumb">
+                                    <figure class="thumb-wrap">
+                                        <a href="single-post.html">
+                                            {% if post.featured_image %}
+
+                                                <img src="/media/{{ post.featured_image }}" alt="" style="width: 388px; height: 301px;">
+                                            {% else %}
+                                                <img src="{% static 'blogApp/assets/images/download.jpg' %}" alt="post"  style="width: 388px; height: 301px;" />
+                                            {% endif %}
+                                        </a>
+                                    </figure>
+                                    <!--./ thumb-wrap -->
+                                </div>
+                                <!--./ entry-thumb -->
+                                <div class="content-entry-wrap">
+                                    <div class="entry-category">
+                                        <a class="cat" href="#"><b>Category&nbsp;({{post.category}})</b></a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <!-- <a class="cat" href="#">Travel</a>
+                                        <a class="cat" href="#">Photography</a> -->
+
+                                      
+                                           <a href="{% url 'comment' post.id %}">
+                                            <i class="fa far-comment-icon" aria-hidden="false ">&#xf075;</i>
+                                            {{post.comments.count|intword}}</a> &nbsp; <i class="fa fa-thumbs-up"> &nbsp;{{ post.likes.count }},</i> &nbsp; <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                           <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Share</a>
+                                    
+                                    </div>
+
+                                    
+                                    <!--./ entry-category -->
+                                    <h3 class="entry-title">
+                                        {{post.title}}
+                                    </h3>
+                                    <!--./ entry-title -->
+                                    <div class="entry-meta-content">
+                                        <div class="entry-author">
+                                            By <a href="#"> {{post.author}}</a>
+                                        </div>
+                                        <!--./ entry-date -->
+                                        <div class="entry-date">
+                                            On <span>{{post.published_date}}</span>
+                                        </div>
+                                        <!--./ entry-date -->
+                                    </div>
+                                    <!--./ entry-meta-content -->
+                                    <div class="entry-summary">
+
+                                        {{ post.text | safe | truncatewords:40 }}
+                                      
+                                    </div>
+                                    <div class="read-more-wrap">
+                                        <a class="read-more" href="blogApp/post_detail/{{post.id}}">Read More</a>
+                                    </div>
+                                    <!--./ entry-content -->
+                                </div>
+                                <!--./ content-entry-wrap -->
+                            </article>
+                        </div>
+                        <!--~./ end post ~-->
+
+                        {% endfor %}
+
+
+                    </div>
+                </main>
+                <!--~./ end site main ~-->
+
+                <!--~~~~~ Start Paging Navigation ~~~~~-->
+                <nav class="navigation paging-navigation style-one pd-t-15">
+                    {% if is_paginated %}
+                    <ul class="nav-links">
+                        {% if page_obj.has_previous %}
+                        <li><a href="?page={{ page_obj.previous_page_number }}">1</a></li>
+                        <li class="active"><a href="?page=2" class="page-numbers">2</a></li>
+                        <li><a href="?page=3" class="page-numbers">3</a></li>
+                        {% if page_ogj.has_next %}
+                        <li class="nav-next">
+                            <a href="?page={{ page_obj.next_page_number }}"><i class="fas fa-angle-right"></i></a>
+                        </li>
+                        {% endif %}
+                        {% endif %}
+                    </ul>
+                    {% endif %}
+                </nav>
+
+                
+                <nav class="navigation paging-navigation style-one pd-t-15">
+                    
+                   <ul class="nav-links"> 
+                       {% if is_paginated %}
+                            {% if page_obj.has_previous %} 
+                                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+                            {% endif %}
+
+                            {% if page_obj.has_next %}
+                                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> &raquo; NEXT</a></li>
+                            {% endif %}          
+                        {% endif %}
+                    </ul>
+                   
+                </nav>
+                
+            
+                 
+                <!--~./ end paging navigation ~-->
+            </div>
+
+            <!--~~~~~ Start sidebar ~~~~~-->
+            <div class="col-lg-3">
+                <!-- Sidebar Items -->
+                <div class="sidebar-items style-three">
+                    <!--~~~~~ Start About Me Widget ~~~~~-->
+                    <aside class="widget bt-about-me-widget style-two">
+                        <h4 class="widget-title">
+                            About Me
+                        </h4>
+                        <!-- /.widget-title -->
+                        <div class="widget-content">
+                            <div class="author-thumb">
+                                <a href="#"><img src="{% static 'blogApp/images/home/1.jpg' %}" alt="img" /></a>
+                            </div>
+                            <div class="info">
+                                <p>
+                                    When it comes to creating is a website for your business, an attractive desig will only get you
+                                    far. With people increasingly using for your business shop online,...
+                                </p>
+                            </div>
+                        </div>
+                    </aside>
+                    <!--~./ end about me widget ~-->
+
+                    <!--~~~~~ Start Categories Widget ~~~~~-->
+                    <aside class="widget widget_categories">
+                        <h4 class="widget-title">
+                            Categories
+                        </h4>
+                        <!-- /.widget-title -->
+                        <div class="widget-content">
+                            <ul>
+                                {% for cat in categories %}
+                               
+                                <li><span>{{ cat.category }}</span></a><span class="float-right">( {{cat.posts_count}} )</span></li>
+                               
+                                {% endfor %}
+                               
+                            </ul>
+                        </div>
+                        <!-- /.widget-content -->
+                    </aside>
+                    <!--~./ end categories widget ~-->
+
+                    <!--~~~~~ Start Signup Widget ~~~~~-->
+                    <aside class="widget tb-signup-widget">
+                        <div class="widget-content">
+                            <div class="signup-box">
+                                <h2>Subscribe to Our Newsletter</h2>
+                                <div class="signup-form-area">
+                                    <form class="signup-form">
+                                        <div class="form-group">
+                                            <input name="EMAIL" placeholder="Your Email Address" type="email">
+                                            <a href="#"></a>
+                                            <input class="btn btn-default" type="submit" value="Subscribe">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!--~./ End Signup Widget ~-->
+
+                    <!--~~~~~ Start Post List Widget~~~~~-->
+                    <aside class="widget widget-post-list">
+                        <h4 class="widget-title">Recent Post</h4>
+                        <!-- /.widget-title -->
+
+                        <div class="widget-content">
+                            {% for recent in recent_post %}
+                            <article class="post">
+                                <div class="">
+                                    <a href="single-post.html">
+                    
+                                        <img src="/media/{{ recent.featured_image }}" alt="post" style="width: 80px;height: 80px;"/>
+                                        <!-- <img src="{% static 'blogApp/assets/images/widget/post/one/wp1.jpg' %}" alt="post" /> -->
+                                    </a>
+                                </div>
+                                <!--./ thumb-wrap -->
+                                <div class="content-entry-wrap">
+                                    <h3 class="entry-title">
+                                        <a href="single-post.html">{{recent.title  | truncatewords:5}}</a>
+                                    </h3>
+                                    <!--./ entry-title -->
+                                    <div class="entry-meta-content">
+                                        <div class="entry-date">
+                                            {{recent.published_date}}
+                                        </div>
+                                    </div>
+                                    <!--./ entry-meta-content -->
+                                </div>
+                            </article>
+                            {% endfor %}
+                            
+                        </div>
+                    </aside>
+                    <!--~./ end post list widget ~-->
+
+                    <!--~~~~~ Start Advertisement Widget ~~~~~-->
+                    <aside class="widget widget_advertisement">
+                        <div class="widget-content">
+                            <a href="#"><img src="{% static 'blogApp/assets/images/widget/ads.jpg' %}" alt="Advertisement" /></a>
+                        </div>
+                        <!-- /.widget-content -->
+                    </aside>
+                    <aside>
+                        <iframe src="" frameborder="0">
+                        <script src="//app.elfsight.com/p/platform.js" defer></script>
+                        <elfsight-app data='id539b7004-f949-a15d-8f3d9a9ab362'></elfsight-app>
+                    </aside>
+                </iframe>
+
+                    <aside class="widget widget_advertisement">
+                        <div class="elf=-">
+
+                        </div>
+                    </aside>
+                    <!--~./ end Advertisement widget ~-->
+                </div>
+                <!--  /.sidebar-items -->
+            </div>
+            <!--~./ end sidebar ~-->
+        </div>
+    </div>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-b0a748e2-e934-4e55-85bd-a4d181fdd5bc"></div>
+</div>
+<!--~./ end main wrapper ~-->
+{% endblock %}

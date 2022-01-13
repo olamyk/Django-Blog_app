@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <style>
+            .profile-image img {
+                position: relative;
+                width: 70px;
+                height: 70px;
+                border-radius: 100%;
+            }
+        </style>
+    
+        <!-- Specific Meta
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="Blog And Magazine HTML5 Template" />
+        <meta name="keywords"
+            content="HTML5, Template, Design, blog, blogger, clean, flat, food, html, magazine, modern, news, personal, photographer, template, white  " />
+    
+        <!-- Titles
+        ================================================== -->
+        <title>Jimmy | Personal Blog</title>
+    
+        <!-- Favicons
+        ================================================== -->
+        <link rel="shortcut icon" href="{% static 'blogApp/assets/images/favicon.ico' %}" />
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'blogApp/assets/images/android-icon-72x72.html' %}" />
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'blogApp/assets/images/apple-icon-144x144.png' %}" />
+    
+        <!-- Custom Font
+        ================================================== -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800&amp;family=Barlow:wght@400;500;600;700&amp;family=Roboto+Slab:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+            rel="stylesheet">
+    
+        <!-- CSS
+        ================================================== -->
+        <link rel="stylesheet" href="{% static 'blogApp/assets/css/bootstrap.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'blogApp/assets/css/magnific-popup.css' %}" />
+        <link rel="stylesheet" href="{% static 'blogApp/assets/css/owl.carousel.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'blogApp/assets/css/simple-scrollbar.css' %}" />
+        <link rel="stylesheet" href="{% static 'blogApp/assets/css/fontawesome.all.min.css' %}" />
+        <link rel="stylesheet" href="{% static 'blogApp/assets/css/style.css' %}" />
+        <link rel="stylesheet" href="{% static 'blogApp/assets/css/color/color-one.css' %}" />
+    
+        <script src="{% static 'blogApp/assets/js/modernizr.min.js' %}"></script>
+    </head>
+
+<body class="boxed_wrapper">
+
+    {% include 'blogApp/navbar/header.html' %}
+
+    {% block main_content %}
+
+    {% endblock %}
+
+
+
+    {% include 'blogApp/navbar/footer.html' %}
+
+</body>
+
+
+
+	<!-- All The JS Files
+		================================================== -->
+        <script src="{% static 'blogApp/assets/js/jquery.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/popper.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/plugins.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/simple-scrollbar.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/masonry.pkgd.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/theia-sticky-sidebar.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/ResizeSensor.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/scrolla.jquery.min.js' %}"></script>
+        <script src="{% static 'blogApp/assets/js/main.js' %}"></script>
+        <!-- main-js -->

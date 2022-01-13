@@ -1,0 +1,109 @@
+{% extends 'blogApp/base.html' %}
+{% load static %}
+{% block main_content %}
+
+
+
+<section class="main-slider rev_slider_wrapper centred">
+    <div class="container-fluid">
+        <ul class="main-slider-carousel owl-carousel owl-theme slide-nav">
+            <li class="slider-wrapper">
+                <div class="image"><img src="{% static 'blogApp/images/home4/slider.jpg' %}" alt=""></div>
+                <div class="slider-caption">
+                    <div class="container">
+                        <div class="slide-content-box">
+                            <div class="blog-content-one centred">
+                                <div class="top-content">
+                                    <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                    <div class="title"><h4>Never heard the word impossible</h4></div>
+                                    <div class="date"><span>On</span> AUGUST 27, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> PAUL JOHN HEYMAN</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                             
+                </div>
+                <div class="slide-overlay"></div>
+            </li>
+            <li class="slider-wrapper">
+                <div class="image"><img src="{% static 'blogApp/images/home4/slider.jpg' %}" alt=""></div>
+                <div class="slider-caption">
+                    <div class="container">
+                        <div class="slide-content-box">
+                            <div class="blog-content-one centred">
+                                <div class="top-content">
+                                    <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                    <div class="title"><h4>Never heard the word impossible</h4></div>
+                                    <div class="date"><span>On</span> AUGUST 27, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> PAUL JOHN HEYMAN</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                            
+                </div>
+                <div class="slide-overlay"></div>
+            </li>
+            <li class="slider-wrapper">
+                <div class="image"><img src="{% static 'blogApp/images/home4/slider.jpg' %}" alt=""></div>
+                <div class="slider-caption">
+                    <div class="container">
+                        <div class="slide-content-box">
+                            <div class="blog-content-one centred">
+                                <div class="top-content">
+                                    <div class="meta-text"><a href="#">TRAVEL</a></div>
+                                    <div class="title"><h4>Never heard the word impossible</h4></div>
+                                    <div class="date"><span>On</span> AUGUST 27, 2018 &nbsp;&nbsp;<i class="flaticon-circle"></i>&nbsp;&nbsp;<span>By</span> PAUL JOHN HEYMAN</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                            
+                </div>
+                <div class="slide-overlay"></div>
+            </li>
+        </ul>
+    </div>
+    <br><br>
+     {%if draft.user.id == is_superuser %}
+    <div class="container">
+        <div class="col-md-5 col-sm-8 col-lg-5">
+            <h2>Posts(Draft)</h2>
+            
+           
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th>Author</th>
+                    <th>Text</th>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for draft in drafts %}
+                 
+                    <tr>
+                    <td>{{draft.id}}</td>
+                    <td>{{draft.text | safe}}</td>
+                    <td><img src="/media/{{ draft.featured_image }}" alt="Image" style="width: 250px;"></td>
+                    <td>{{draft.title}}</td>
+                    <td>
+                        <a  href="{% url 'publish' pk=draft.pk %}" ><input type="button" class="btn btn-success" value="PUBLISH"></a>
+                        <a href="{% url 'update' pk=draft.pk %}" ><input type="button" class="btn btn-primary" value="EDIT"></a>
+                    <a href="{% url 'delete' pk=draft.pk %}" ><input type="button" class="btn btn-danger" value="DELETE"></a>
+                        
+                    </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <h3>You are not allow here :)</h3>
+               
+                {% endif %}
+        </div>
+    </div>
+
+</section>
+
+
+    
+{% endblock %}

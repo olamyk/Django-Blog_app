@@ -1,0 +1,68 @@
+.subscribe-section .subscribe-section-content,
+.site-header.header-style-one.style-two .navigation-area,
+.site-header.header-style-one.style-two .header-logo-area,
+.sidebar-items.style-one .bt-socail-widget .widget-content,
+.main-wrapper:before {
+    background-color: #FBF2F2;
+}
+.main-wrapper {
+    position: relative;
+}
+.main-wrapper:before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 300px;
+}
+
+#sticky-header .site-header.header-style-one.style-two .navigation-area {
+    background-color: #332A2A;
+}
+.paging-navigation .nav-links > li > a {
+    background-color: #F8F8F8;
+    color: #000;
+}
+.subscribe-section-content .subscribe-form #mc-form #subscribe-btn:hover,
+.topbutton,
+.read-more-wrap > .read-more:focus, 
+.read-more-wrap > .read-more:hover,
+.sidebar-items .widget-title,
+.search-wrap .search-form button, .search-wrap .search-form input[type="button"], 
+.search-wrap .search-form input[type="reset"], 
+.search-wrap .search-form input[type="submit"],
+.site-header.header-style-one .hamburger-menus > span,
+.footer-bottom-area .socail-share > a,
+.post.style-four .entry-category > a {
+    background-color: #C97278;
+}
+
+.paging-navigation.style-one .nav-links > li.active > a, 
+.paging-navigation.style-one .nav-links > li > a:hover,
+.paging-navigation .nav-links > li.active > a, 
+.paging-navigation .nav-links > li > a:hover {
+    background-color: #C97278 !important;
+}
+
+.copyright-text a:hover,
+.entry-category > a,
+.entry-meta-content a:hover, 
+.entry-meta-content a:focus,
+.site-header.header-style-one.style-two.intro-element .intro-socail-share .socail-share a, .site-header.header-style-one.style-two .search-wrap > .search-btn, 
+.site-header.header-style-one.style-two .header-card-area > a,
+.subscribe-section-content:before,
+.read-more-wrap > .read-more.read-more-two [class*="fa-"],
+.read-more-wrap > .read-more.read-more-two:hover,
+.read-more-wrap > .read-more.read-more-two:focus {
+    color: #C97278;
+}
+.site-header.header-style-one .mainmenu li:hover > a, 
+.site-header.header-style-one .mainmenu > li > a:hover, 
+.site-header.header-style-one .mainmenu > li > a.active {
+    color: #C97278 !important;
+}
+
+.sidebar-items .widget-title::before {
+	border-color: #C97278 transparent transparent;
+}

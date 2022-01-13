@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2017-11-12: Created with FontForge (http://fontforge.org)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20160405 at Sun Nov 12 08:22:29 2017
+ By Apache
+Copyright (c) 2017, Apache
+</metadata>
+<defs>
+<font id="Flaticon" horiz-adv-x="512" >
+  <font-face 
+    font-family="Flaticon"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 3 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -64 512 448"
+    underline-thickness="25.6"
+    underline-position="-51.2"
+    unicode-range="U+0020-F106"
+  />
+    <missing-glyph />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="200" 
+ />
+    <glyph glyph-name="uniF104" unicode="&#xf104;" 
+d="M256 448c141.163 0 256 -114.837 256 -256s-114.837 -256 -256 -256s-256 114.837 -256 256s114.837 256 256 256z" />
+    <glyph glyph-name="uniF100" unicode="&#xf100;" 
+d="M18.1006 173.777c-10.085 0 -18.1006 8.26074 -18.1006 18.3447c0 10.085 8.01562 18.1006 18.1006 18.1006h475.539c10.084 0 18.3604 -8.01562 18.3604 -18.1006c0 -10.084 -8.27637 -18.3604 -18.3604 -18.3604h-475.539v0.015625z" />
+    <glyph glyph-name="uniF102" unicode="&#xf102;" 
+d="M0 179.81v24.3809h512v-24.3809h-512z" />
+    <glyph glyph-name="uniF101" unicode="&#xf101;" 
+d="M0 167.619v48.7617h512v-48.7617h-512z" />
+    <glyph glyph-name="uniF105" unicode="&#xf105;" 
+d="M96 272v16h320v-16h-320zM96 176v16h320v-16h-320zM96 80v16h320v-16h-320z" />
+    <glyph glyph-name="uniF103" unicode="&#xf103;" 
+d="M0 133.228v117.567h512v-117.567h-512z" />
+    <glyph glyph-name="uniF106" unicode="&#xf106;" 
+d="M16 288c-8.83105 0 -16 7.16895 -16 16s7.16699 15.999 16 15.999h479.999c8.83105 0 16 -7.16699 16 -15.999c0 -8.83105 -7.16797 -16 -16 -16h-479.999zM495.999 208c8.83203 0 16 -7.16895 16 -16s-7.16797 -16 -16 -16h-479.999c-8.83105 0 -16 7.16895 -16 16
+s7.16699 16 16 16h479.999zM495.999 96c8.83203 0 16.001 -7.16699 16 -16c0 -8.83105 -7.16797 -15.999 -16 -15.999h-320c-8.83105 0 -15.999 7.16699 -15.999 15.999c0 8.83105 7.16699 16 15.999 16h320z" />
+  </font>
+</defs></svg>
